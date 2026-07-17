@@ -1,0 +1,1978 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Malla CP · Julio 2026</title>
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+</head>
+<body style="margin:0;padding:0;">
+<div id="root"></div>
+<script>
+const {
+  useState,
+  useEffect
+} = React;
+const _raw = `{"N":["Elian Quiñonez","Walter Villarroel","Sergio Medel","Victor Cruz","Constanza Fuenzalida","Jorge Cordova","Luis Moris","Alfredo Duran","Carla Arriagada","Cesar Araya","Edgar Lazo","Jenny Gomez","Matias Jara","Andres Bustos","Gina Venegas","Gonzalo Muñoz","Isak Iriarte","Kevin Flores","Yenny Labarca","Carolina Pilar","Hector Cabello","Oscar Castro","Rodrigo Leon","Alexis Martinez","Christian Ramirez","Luis Nicolas","Gonzalo Saez","Luis Soñez","Jesus Lucena","Francia Figueroa","Leonardo Gonzalez","Guillermo Diaz","Ivan Castro","Nicole Machuca","Marcelo Bustos","Maria Ramirez","Brayan Monsalve","Marcela Alfaro","Joceline Sagredo","Marco Ramirez","Vinicio Castillo","Benjamin Amaro","Moises Quero","Gricelda Las","Luis Nuñez","Cecilia Carmen","Arely Vergara","Esteban Riquelme","Luis Mancilla","Roberto Cancino","Carlos Urrutia","Roberto Lopez","Valentin Cortes","Alvaro Lopez","Arturo Vargas","Hernan Zuñiga","Fideliza Oyarzo","Claudio Solis","Victor Soto","Cesar Muñoz","Ernesto Gonzalez","Shirley Choque","Cesar Diaz","Jesus Galea","Raul Gonzalez","Esteban Virquilao","Marcelo Gatica","Nicolas Osses","Rolando Bello","Francisco Morales","Jaime Zambrano","Juan Ruiz","Francisco Luciano","Jean Chacana","Victor Barbosa","Joel Heraldo","Nora Arias","Danilo Morales","Floridor Poblete","Jorge Escobedo","Jacqueline Gutierrez","Maycol Jorge","Raul Cossio","Ruben Garcia","Carolina Ilufi","Alexandra Castillo","Daniel Monje","Eduardo Jara","Cristian Aravena","Manuel Cortes","Aurihannys Vargas","Fernando Mendoza","Karina Orellane","Wendy Mora","Geraldine Guajardo","Patricio Ramirez","Vanessa Rodriguez","Jose Lagos","Juan Guerra","Eduardo Urra","Jose Medina","Victor Astorga","Juan Alarcon","Pablo Arostica","Yerko Vilches","Marisol Carmen","Patrick Lara","Sandra Alvarez","Carmen La","Ayan Rondon","Luis Flores","Daniela Maiz","Enrique Gallardo","Carlos Carrasco","Juan Acuña","Francisco Romero","Yoana Pilar","Corina Hernandez","David Gallardo","Patricio Velozo","Eddy Castañeda","Jose Cantillana","Segundo Varas","Alonso Lloncon","Raul Hernandez","Harmin Alvarez","Carlos Carcamo","Gonzalo Jaimes","Ignacio Ponce","Jorge Saenz","Ana Mendoza","Gabriel Hernandez","Miguel Aburto","Yordana Franco","Adrian Acevedo","Raquel Perez","Angelica Mena","Luis Cornejo","Fernando Gallegos","Lennys Gonzalez","Silvana Ramos","Christian Arias","Juan Castro","Matias Callejas","Claudio Espinoza","Eduardo Varas","Jorge Lillo","Ana Flores","Elias Tarqui","Jasbleidi Suarez","Abigail Pacheco","Ramon Balboa","Elena Carmen","Michel Montecinos","Benjamin Campusano","Johana Cortes","Luis Reyes","Vicente Concha","Cristobal Oteiza","Gabriel Rojas","Hernan Menares","Hector Galaz","Maria Alejandra","Jorge Jara","Nicolas Garcia","Omar Venegas","Ricardo Pardo","Sebastian Vega","Alvaro Abatte","Constanza Barria","David Bravo","Myriam Domke","Dario Gonzalez","Silvano Tapia","William Bolbaran","Luis Sepulveda","Rodrigo Muñoz","Cristian Carrasco","Daniel Vivanco","Diego Mendez","Derly Ovalle","Erick Tropa","Ruth Molina","Anaiz Gonzalez","Manuel Meza","Jorge Hormazabal","Raul Coronado","Ricardo Catalan","Yenifer Heimpel","Froilan Vega","Gianina Laflor","Jorge Araya","Violeta Labra","Camilo Cabrera","Javiera Zuñiga","Jonathan Ruiz","Marcelo Bastida","Raul Argel","Ricardo Araya","Diego Reyes","Ruben Navas","Camila Gonzalez","Juan Sebastian","Pedro Inostroza","Edward Noreña","Evelyn Carmen","Miguel Escobar","Israel Zamora","Mario Martinez","Diego Gonzalez","Lucky Cortes","Bernardo Echavarria","Jose Contreras","Horacio Venegas","Alan Loras","Mario Rojas","Marta Avendaño","Cristian Molina","Jorge Simbaña","Luis Carrasco","Maritza Riffo","David Neira","Lennon De","Rodrigo Vega","Aaron Chirinos","Victor Gonzalez","Jose Cabello","Marco Zuñiga","Victoria Lopez","Gabriela Espinoza","Yarela Olivares","Yerko Diaz","Yujarthd Alvarez","Claudio Reyes","Luis Ceci","Juan Hernandez","Nancy Jorquera","Aren Meza","Omar Petit","Cristopher Almendra","Luis Plaza","Rurik Araus","Hernan Alarcon","Vladimir Toro","Felipe Guerrero","Luis Godoy","Cristian Salvat","Matias Hernandez","Felipe Orlando","Sandra Flores","Alonso Retamales","Andres Iturra","Judith Beltran","Victor Aravena","Danitza Abello","Francisco Maldonado","Juan Rojas","Hector Antil","Juan Soto","Sebastian Esteban","Dany Fuentes","Oscar Gonzalez","Jose Valenzuela","Leslie Astete","Mauricio Cortes","Manuel Herrera","Gimena Mamani","Hernan Irarrazabal","Zenon Corani","Camilo Ramirez","Sebastian Bello","Gladys Manriquez","Ivan Alvarez","Marcia Angulo","Benjamin Galleguillos","Eduardo Miranda","Miguel Urrutia","Evelyn Villegas","Julio Muñoz","Renato Roa","Alejandro Gonzalez","Bryan Paez","Rafael Pimenta","Angel Cavero","Daniel Cleary","Jose Garcia","Cristian Villalon","Ivan Baeza","Sebastian Flores","Jorge Marin","Katherine Pilar","Patricio Sanchez","Rene Alarcon","Alvaro Mayorga","Rodolfo Torres","Oscar Zerene","Anibal Ortiz","Elizabeth Acuña","Hernan Bahamondez","Pamela Marchant","Jaime Ruiz","Claudia Gonzalez","Pedro Jara","Pablo Parra","Robinson Aburto","Perla Barraza","Waldo Olivares","Maria Orellana","Carlos Guerrero","Maritza Perez","Jeannette Carmen","Julio Vera","Diego Jesus","Paola Pilar","Fabricio Medina","Jose Venegas","Karin Macias","Aldy Urbina","Cesar Lizarazo","Roberto Pincheira","Bania Guerra","Luis Zamora","Oscar Arriagada","Ximena Carmen","Carlos Olguin","Katherine Ramirez","Patricio Molina","Paulo Olivos","Cristian Leiva","Ariel Rivera","Sergio Campillay","Marcelo Maraboli","Monica Romero","Hernan Jaramillo","Israel Gaete","Gabriela Orellana","German Peña","Emily Rodriguez","Denys Morniev","Ismael Alarcon","Jessica Islas","Carlos Martinez","Felipe Ordenes","Jose Farias","Patricio Fernandez","Americo Balmaceda","Hector Besoain","Patricio Avalos","Juvenal Bustamante","Carlos Abarca","Flor Bernal","David Ulloa","Pamela Tobar","Gustavo Echegaray","Jazmin Gonzalez","Jesus Rodriguez","Christian Saez","Luis Olivares","Jorge Hernandez","Jorge Leiva","Patricia Carmen","Ruben Pacheco","Felipe Ramos","Horacio Moroso","Marcela Barraza","Iordana San","Jorge Figueroa","Virginia Carmen","Sebatian Yañez","Gustavo Carrasco","Paulina Valenzuela","Mauricio Alarcon","Alejandro Fabres","Roberto Huechumpan","Maxi Peña","Paola Rios","Alejandro Choque","Paola Fernandez","Felipe Parra","Erick Peña","Cecilia Orellana","Juan Quinteros","Patricio Mejias","David Cisternas","Lorena Otero","Luis Bustos","Cesar Albanes","Dayana Gonzalez","Hernaldo Galleguillos","David Ortiz","Jorge Carmen","Charly Arancibia","Alberto Morales","Jeremy Saavedra","Modesto Soto","Raul Guerra","Blanca Tapia","Manuel Baeza","Ruben Soto","Isaac Jure","Patricio Peralta","John Elgueta","Jose Zuñiga","Juan Diaz","Luis Grinen","Renato Abarca","Egon Alvarado","Hector Campos","Juan Santander","Francisco Pardo","Kelvin Gonzalez","Yennifer Depool","Claudio Saez","Pablo Placencia","Victor Beltran","Ivan Rojas","Juan Gonzalez","Jose Ibar","Valeria Araya","Charles Castro","Heriberto Perez","Alexander Gonzalez","Cristian Soza","Carmen Rojo","Mauricio Limari","Tomas Urrea","Max Tejerina","Miguel Cardenas","Cristobal Inzunza","Cristian Alarcon","Jeisson Barrios","Liseth Anselmi","Daniel Viloria","Karen Gonzalez","Oliver Rua","Maicol Varas","Gonzalo Zamora","Keila Martinez","Felipe Alarcon","Sebastian Alarcon","Josue Jimenez","Kevin Gonzalez","Diego Espinoza","Jesus Soto","Ana Pizarro","Hugo Herrada","Jonathan Ramirez","Hender Marquez","Alvaro Ojeda","Beatriz Carmen","Joaquin Ramirez","Jose Artigas","Cecilia Pedreros","Guillermo Cantillana","Mauricio Retamales","Rodrigo Miquel","Gisela Villagran","Rodrigo Luna","Victor Obreque","Lina Fernandez","Juliana Albildo","Mario Maldonado","Mauricio Aguilera","Yasna Diaz","Rodolfo Vasquez","Diego Ignacio","Flavio Zamorano","Marco Henriquez","Jose Espinoza","Alvaro Vasquez","Marco Matus","Ian Marambio","Manuel Sandoval","Carlos Leon","Cristian Iraira","Jorge Lagos","Pedro Leighton","Carlos Castro","Jose Oyarzo","Luis Vega","Victor Aros","Sebastian Inostroza","Bruno Vasquez","Elizabeth Gajardo","Ricardo Muñoz","Alejandro Zurita","Miguel Carcamo","Alejandra Ayala","Sebastian Silva","Patricio Sandoval","Eliezer Ramirez","Gerardo Fuentes","Juan Catalan","Nancy Guerrero","Luis Herrera","Francisco Recabarren","Nicolas Magna","Jorge Silva","Branco Arqueros","Patricio Urzua","Daisy Lewis","Mauricio Ordenes","Armin Garcia","Jonathan Guzman","Mauricio Alegria","Sara Castillo","Franchesca Fuentes","Juan Roa","Nestor Molina","Barbara Vasquez","Mauricio Cancino","Hernan Villagra","Rosa Castillo","Zunilda Carmen","Solange Silva","Jorge Pizarro","Kevin Aravena","Daniel Torres","Jose Trespalacios","Jesus Mella","Gino Munoz","Monica Mejia","Ricardo Yañez","Yerko Osorio","Eduardo Carrasco","Felipe Perez","Pablo Bahamondes","Claudio Valdes","Diego Olmos","Yarixa Cornejo","Rolando Benavides","Sergio Gonzalez","Carlos Henriquez","Emanuel Ledesma","Claudio Sanchez","Edwin Martinez","Carla Badilla","Leonardo Villagra","Andrea Morales","Fernando Urrutia","Kevin Bolados","Jessica Morales","Joao Sanchez","Jose Morales","Marisa Vasquez","Juan Guevara","Reinaldo Segovia","Enrique Cortes","Geovana Cancino","Mauricio Concha","Lilian Berenguela","Nicolas Gavilan","Daniel Araya","Barbara Caceres","Jenny Guagua","Diego Alexander","Maria Salas","Victor Escobar","Camilo Delsante","Loreany Valle","Luis Silva","Dayron Avalos","Jhonny Mujica","Darwin Caceres","Ismael Vargas","Eduardo Alarcon","Roberto Barrera","Jayron Jaymen","Pamela Hernandez","Ana Gutierrez","Guillermo Loyola","Gabriel Ortega","Julio Diaz","Catalina Henriquez","Henry Gonzalez","Pamela Carmen","Emilio Arqueros","Viviana Carmen","Jose Catalan","Nicolas Rojas","Felipe Tasso","Roger Sandoval","Cristian Morales","Patricio Maturana","Diego Ceballos","Luis Grollmus","Krislli Jimenez","Jaime Marin","Teresita Jesus","Gustavo Transito","Hector Alvarado","Luis Roa","Elizabeth Arriagada","Carol Carmen","Roxana Sanchez","Geraldine Valenzuela","Gabriel Gomez","Daniel Cruz","Nancy Perez","Johanna Rocio","Maria Abarzua","Osvaldo Reuque","Elizabeth Carmen","Caroline Zapata","Margarita Carmen","Angel Espinoza","Javier Garay","Nicolasa Carmen","Jose Gonzalez","Jose Cifuentes","Arnaldo Gutierrez","Gabriel Caceres","Fabian Ortega","Marcela Las","Ruben Donoso","Alex Ignacio","Arturo Gallardo","Carlos Huerta","Hector Carmen","Rosa Ruiz","Edison Ernesto","Jose Silva","Stalin Garcia","Sebastian Correa","Nicolas Diaz","Santiago Santibañez"],"T":["ANTOFAGASTA","ARICA","BUIN ERRAZURIZ","BUIN M. RODRIGUEZ","CALAMA","CAMINO MELIPILLA","CHILLAN","COPIAPO","CURICO NORTE","EL BELLOTO","HUALPEN","IQUIQUE","LA FLORIDA","LA SERENA","LAS CONDES","LAS REJAS","LINARES","LLOLLEO","LOS ALAMOS COLINA","LOS ANGELES ALCAZAR","MELIPILLA","MOLINA","OSORNO","OVALLE","PEÑAFLOR","PUERTO MONTT","RANCAGUA","SAN PEDRO DE LA PAZ","TALCA","TALCAHUANO","TEMUCO","DEPARTAMENTAL"],"C":["BC5","P59","BC3","EI10","P60","G24","MT43","F18","EI11","EI15","EI12","J36","R70","MC53","MT44","BC1","EI14","MC57","H31","G25","P61","R74","P58","F17","P65","F16","MT45","H34","R69","MT41","R71","EI8","G26","P62","H32","EI13","R73","G27","F22","R72","R67","MC52","P63","F23","BC6","MC55","MT42","F20","MC51","BC2","MT46","H33","MC50","MC56","EI9","P64","G29","J37","J38","F21","J39","MT47","P66","MC48","MC54"],"P":["CÓMO ESCOGER E INSTALAR COLUMNAS DE","CÓMO PROTEGER LAS MADERAS NUEVAS O ","CÓMO INSTALAR Y CAMBIAR GRIFERÍAS","CÓMO REALIZAR INSTALACIONES ELÉCTRI","CÓMO PREPARAR SUPERFICIES PARA PINT","CÓMO ESCOGER E INSTALAR UN CALEFONT","CÓMO CONSTRUIR MUEBLES CON TABLEROS","CÓMO ESCOGER E INSTALAR CERRADURAS ","CÓMO INSTALAR Y CABLEAR TUBERÍAS EL","CÓMO ELEGIR E INSTALAR ILUMINACIÓN ","CÓMO ILUMINAR LOS ESPACIOS DE UNA C","CÓMO UTILIZAR Y MANTENER DESBROZADO","CÓMO REPARAR CERÁMICAS YA INSTALADA","CÓMO INSTALAR POLICARBONATO","CÓMO INSTALAR Y PINTAR MOLDURAS DE ","CÓMO ESCOGER E INSTALAR SALAS DE BA","CÓMO ELEGIR E INSTALAR REFLECTORES ","CÓMO CONSTRUIR PERÍMETROS CON MALLA","CÓMO UTILIZAR HERRAMIENTAS ELÉCTRIC","CÓMO REALIZAR INSTALACIONES DE PVC ","CÓMO REVESTIR UNA FACHADA CON TEXTU","CÓMO INSTALAR PISO VINÍLICO EN PALM","CÓMO PINTAR PAREDES DE DISTINTOS ES","CÓMO UTILIZAR SELLANTES Y SILICONAS","CÓMO ESCOGER LA FIJACIÓN IDEAL PARA","CÓMO CONSTRUIR CERCHAS PARA UNA TEC","CÓMO REALIZAR TRABAJOS DE SOLDADURA","CÓMO INSTALAR PORCELANATOS","CÓMO ELEGIR E INSTALAR DIFERENTES T","CÓMO INSTALAR LISTELES O MALLAS","CÓMO INSTALAR INTERRUPTORES Y ENCHU","CÓMO ESCOGER E INSTALAR UNA FOSA SÉ","CÓMO PINTAR SUPERFICIES METÁLICAS","CÓMO ESCOGER E INSTALAR UN GENERADO","CÓMO ELEGIR ILUMINACIÓN EXTERIOR","CÓMO INSTALAR PISO FLOTANTE","CÓMO ESCOGER E INSTALAR UN ESTANQUE","CÓMO ESCOGER E INSTALAR EL MOTOR QU","CÓMO INSTALAR FIBROCEMENTO CON DISE","CÓMO INSTALAR CERÁMICA EN PISO","CÓMO INSTALAR TEJAS ASFÁLTICAS","CÓMO PINTAR UNA PISCINA","CÓMO TRABAJAR EN CONDICIONES SEGURA","CÓMO ESCOGER E INSTALAR UN LAVAPLAT","CÓMO INSTALAR BAJADAS DE AGUA","CÓMO AISLAR TÉRMICAMENTE UNA CASA","CÓMO HACER UNA PARRILLA UTILIZANDO ","CÓMO ESCOGER E INSTALAR UN EXTRACTO","CÓMO ESCOGER E INSTALAR UN COMPRESO","CÓMO HACER UN RADIER","CÓMO INSTALAR UN SIDING","CÓMO INSTALAR UN TABLERO ELÉCTRICO ","TINTOMETRÍA","CÓMO ESCOGER E INSTALAR UN TERMO","CÓMO SEMBRAR CÉSPED","CÓMO FUMIGAR UN JARDÍN","CÓMO INSTALAR TODO TIPO DE CORREDE","CÓMO UTILIZAR Y MANTENER MOTOSIERRA","CÓMO CONSTRUIR UNA AMPLIACIÓN EN MA","CÓMO APLICAR IMPERMEABILIZANTES","CÓMO ARMAR UN TABIQUE INTERIOR","CÓMO REALIZAR TRABAJOS EN CARPINTER"],"FI":["2026-07-08","2026-07-06","2026-07-22","2026-07-14","2026-07-09","2026-07-07","2026-07-23","2026-07-28","2026-07-30","2026-07-27","2026-07-15","2026-07-20","2026-07-29","2026-07-10","2026-07-21","2026-07-13","2026-07-17","2026-07-24","2026-07-31"],"FD":["08/07/2026","06/07/2026","22/07/2026","14/07/2026","09/07/2026","07/07/2026","23/07/2026","28/07/2026","30/07/2026","27/07/2026","15/07/2026","20/07/2026","29/07/2026","10/07/2026","21/07/2026","13/07/2026","17/07/2026","24/07/2026","31/07/2026"],"AT":["10:30 a 19:00","07:45 a 16:15","07:45 a 17:15","11:15 a 20:45","06:00 a 14:30","10:45 a 19:15","12:15 a 20:15","09:30 a 18:30","-","07:45 a 16:45","11:30 a 20:30","Libre","08:00 a 17:00","07:45 a 15:45","12:45 a 20:45","11:30 a 21:00","Vac.","07:30 a 16:30","06:45 a 16:15","14:00 a 21:00","08:00 a 17:30","09:00 a 16:00","13:00 a 21:00","Lic. Med.","08:00 a 16:30","12:00 a 19:30","11:30 a 19:30","11:00 a 20:30","11:45 a 20:45","13:00 a 20:30","08:00 a 16:00","09:00 a 18:00","11:15 a 20:15","11:15 a 19:15","11:45 a 19:15","07:30 a 17:00","09:00 a 17:30","10:00 a 19:30","10:30 a 20:30","11:00 a 20:00","09:00 a 18:30","12:30 a 21:00","07:45 a 15:15","08:30 a 16:30","11:00 a 19:00","12:45 a 20:15","07:45 a 17:45","12:15 a 20:45","08:30 a 17:00","10:45 a 20:15","Comp.","09:30 a 19:00","08:45 a 16:45","13:30 a 21:00","09:00 a 17:00","09:00 a 19:00","12:00 a 20:00","10:30 a 20:00","07:00 a 16:30","12:00 a 21:00","07:45 a 18:15","08:30 a 18:00","11:30 a 19:00","09:30 a 18:00","08:15 a 17:45","10:00 a 19:00","14:00 a 20:00","08:30 a 16:00","08:15 a 17:15","08:45 a 17:15","07:45 a 14:45","10:15 a 20:15","08:30 a 17:30","08:00 a 15:30","09:30 a 17:00","09:30 a 17:30","12:30 a 20:30","09:30 a 16:30","06:15 a 15:45","08:15 a 16:15","11:00 a 19:30","06:00 a 15:30","11:00 a 21:00","13:45 a 20:45","11:45 a 20:15","10:30 a 18:00","12:15 a 19:45","09:15 a 18:45","07:30 a 15:30","07:00 a 16:00","09:45 a 19:15","10:00 a 17:00","09:00 a 16:30","10:00 a 18:30","12:30 a 20:00","10:45 a 17:45","13:15 a 20:45","10:00 a 18:00","09:30 a 19:30","09:45 a 15:15","07:00 a 14:30","10:30 a 19:30","10:00 a 17:30","07:30 a 15:00","10:15 a 18:45","10:45 a 18:45","06:45 a 14:15","07:30 a 16:00","10:15 a 19:15","10:30 a 18:30"],"MT":["10:00 a 19:30","07:45 a 17:15","09:30 a 18:30","09:30 a 19:00","07:45 a 16:45","07:45 a 16:15","11:00 a 21:00","13:00 a 20:30","08:45 a 16:45","Lic. Med.","11:30 a 21:00","11:00 a 20:30","07:45 a 15:45","06:00 a 16:00","06:00 a 15:30","08:45 a 16:15","08:45 a 18:15","11:45 a 20:45","Libre","12:45 a 20:45","09:00 a 18:30","08:00 a 16:00","11:15 a 20:45","11:15 a 19:15","07:45 a 17:45","06:45 a 14:45","11:30 a 19:30","Vac.","11:30 a 19:00","10:45 a 19:15","11:45 a 20:15","13:15 a 20:45","12:15 a 20:45","09:30 a 17:00","07:00 a 16:30","12:00 a 21:00","12:00 a 20:30","07:45 a 15:15","12:30 a 21:00","07:30 a 16:00","Comp.","11:00 a 20:00","11:30 a 20:30","10:30 a 20:00","11:15 a 20:15","10:15 a 18:15","09:00 a 18:00","07:30 a 16:30","08:00 a 17:00"],"MO":[["Jeannette Soto","M","COPIAPO"],["Victor Malhue","M","ARICA"],["Jose Bahamondes","M","CAMINO MELIPILLA"],["Veronica Benitez","M","EL BELLOTO"],["Jose Cañulef","M","OSORNO"],["Alejandro Diaz","M","OVALLE"],["Jonathan Pasten","E","ARICA"],["Jorge Puga","M","LAS REJAS"],["Braulio Flores","M","LAS REJAS"],["Claudio Cancino","M","TEMUCO"],["Javier Barraza","E","SAN PEDRO DE LA PAZ"],["Gloria Molina","M","CHILLAN"],["Juan Donoso","M","MELIPILLA"],["Maria Yañez","M","LOS ANGELES ALCAZAR"],["Fernandoi Felipe","M","TALCA"],["Estrella Iturra","M","CAMINO MELIPILLA"],["Cesar Cortes","M","OVALLE"],["Frederick Leal","M","LA SERENA"],["Geronimo Castro","M","HUALPEN"],["Diego Aedo","M","SAN PEDRO DE LA PAZ"],["Maria Olmedo","M","MELIPILLA"],["Carlos Toledo","M","LAS REJAS"],["Gustavo Bersano","M","BUIN ERRAZURIZ"],["Aracelis Mora","M","LAS CONDES"],["Fernando Salazar","M","LOS ANGELES ALCAZAR"],["Juan Rodriguez","M","LAS REJAS"],["Ana Quiñonez","M","CHILLAN"],["Michael Zurita","E","PUERTO MONTT"],["Jaime Valdes","M","CURICO NORTE"],["Pablo Herrera","M","LOS ANGELES ALCAZAR"],["Gustavo Peña","M","PEÑAFLOR"],["Genaro Diaz","M","RANCAGUA"],["Rodrigo Silva","E","CAMINO MELIPILLA"],["Isabel Verdugo","M","CHILLAN"],["Jorge Briones","M","SAN PEDRO DE LA PAZ"],["Diego Fuentecilla","E","BUIN M. RODRIGUEZ"],["Laura Estrada","M","LAS REJAS"],["Wilinton Quezada","M","PUERTO MONTT"],["Daniel Roa","M","ARICA"],["Dariana Olivares","M","CURICO NORTE"],["Ivan Osorio","M","OSORNO"],["Joaquin Rojas","M","LINARES"],["Alfonso Aravena","M","LOS ALAMOS COLINA"],["Vidal Italo","M","TALCA"],["Alex Cofre","M","LOS ANGELES ALCAZAR"],["Vielma San","E","TALCAHUANO"],["Abraham Contreras","M","HUALPEN"],["Humberto Pereira","M","PEÑAFLOR"],["Alex Sepulveda","M","EL BELLOTO"],["Bernardo Lugo","M","COPIAPO"],["Hellen Canales","M","CHILLAN"],["Richard Perez","M","LOS ANGELES ALCAZAR"],["Matias Suarez","M","TALCAHUANO"],["Pedro Belmar","M","TALCAHUANO"],["Antonio Curiñanco","M","TEMUCO"],["Segundo Campos","M","EL BELLOTO"],["Juan Ugalde","M","RANCAGUA"],["Eduardo Armijo","M","EL BELLOTO"],["Ivan Diaz","M","DEPARTAMENTAL"],["Alexis Rojas","M","LA SERENA"],["Camilo Galvez","M","LAS REJAS"],["Elizabeth Verdugo","E","LOS ANGELES ALCAZAR"],["Andres Gallardo","M","PEÑAFLOR"],["John Cuevas","M","LAS REJAS"],["Juan Rivera","M","LA SERENA"],["Jose Urbaez","M","HUALPEN"],["Manriquez Alejandro","M","TALCAHUANO"],["Norberto Garcia","M","LOS ALAMOS COLINA"],["Camilo Salgado","M","CAMINO MELIPILLA"],["Luis Riveros","M","CHILLAN"],["Ricardo Vargas","M","LINARES"],["Luz Perez","M","RANCAGUA"],["Jari Marchant","M","ARICA"],["Fabian Ulloa","M","TALCAHUANO"],["Martin Jara","M","LOS ANGELES ALCAZAR"],["Daniel Torres","M","TEMUCO"]],"L":["https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTkwMGNjZTctZTUzZi00NTdiLThiYjQtZjEwMTBhZWVkZjll%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzVjZDJiMjYtODhhMS00MGM0LTgxYTktZDAxNjZiNGI0MzY4%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTgzMTE2NjEtZTM1Yy00MWZlLTg2MWItYTA1M2ZkODFhMDA5%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_MDM0ZTg5ZDgtNTg0OC00NDZiLWEzZGUtYjMwYTQyY2E1ZWUx%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NmU3MDY5NDItYmUwMS00M2Q5LThkZmUtMDgzZGI2MzM2YTcw%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjBmYzE2OTMtYTk2My00MmYzLTg5ODYtYjJmODgzNzFiNTU3%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjdjNmNiYjItOTAyYS00OTQxLWI3N2UtNzZkZTRkZWE5NTNj%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_YmJkMWI0MzctMmI5NS00NzU3LWIwOGItODUzYWUyNDhiYmEy%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDZmMTMzY2EtMTQyMy00OWViLTgzNjEtYzcxOWYwYTE0YTJj%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ODdjNWMxOWQtMzU1MS00MzRlLWI4MGUtMjU3ODg0MjI4ZDNl%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_MWMzMzdjNmMtNzY2YS00ODg4LTljMWMtNDkzMzkxNjlkNjMx%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NDYwZmQ4ZDMtZTBiNy00NmFmLWJlYjEtYzU4NTc3OWUxYzUy%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjU5NTU4MzYtZTgyOS00ODViLTkyMTgtMTUxNzI3NjFkNmUy%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGZlNmI3YTctYTU0MS00MjVkLWI2YTQtNzBkZmZlZjg1MjA2%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjliOTg5MjctNDUxOS00NTQzLWI1M2ItZWJmNTRmYjA1M2Fk%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_MDJlNTM4NjQtZWM4NS00NjEyLWI3NmItMDg0ZDIxYTU2MzZk%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGVhMGUwZDgtNjU3Zi00MzdjLTk2YjktNmM3NWQzMWZlY2E4%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_MWU0MzUzOTEtNTE0NC00YmJkLWE3OTEtMzJjMDc4MmQ2ODJj%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NmVhODIzYTQtYTg2Ny00ZWEyLThhZWMtYjJiMTQxYmE4OTY3%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NGUwMjllYmQtMmY0Ny00NmNmLWFkZGQtMjc1ZWQ2ZWNjNTUy%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzNhMjVjOWUtMmIwNi00OGQ4LWFiOWUtZWNmNDc5ZjVkMzdi%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ODcxZDVhYzEtYjhiZC00NDE1LWFmZmQtMjE2ODJlOTEyZDQ4%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_YTFkYWVmNDktMDRmNS00N2ZmLWJhNTAtNGNhNDVmODUzNDE5%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_YTRmNzIwODAtOWUxOS00MTY4LTgyMjQtYjcxMWIyZDhhZDlj%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ODVmZDk5YjctYjAxMC00ODA2LWJlMGEtYmU3Y2QzNzA2MTI5%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NmNhMTNjYmYtNDJiMS00OTY5LWIxYmQtZjc4Y2EwNmNmMjg1%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_OTgyMDY0MmUtMjI2Yy00YTBlLTkwODgtYzgxYWIxMmM3Yzdm%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTVhYzZhM2EtOTg5NS00ZTQ3LThiOTgtZTYyOGM0YTBkNTVm%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjMyOTBmOGItMGNjYS00MjgxLWI4NzktODY2MGVlMTEyNDQx%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_OWVkM2NmNmItYzJmMC00YzViLWFlNjQtNGE0MDJmMTFiMjgz%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZWM1MDA3YTUtZWEzNy00YzFmLTg3ZTYtZThmNmI1Zjg1MGE3%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjNjMDM5OTgtMjJlYS00NWM0LWExNjgtZjkwODU3NWY1MjY4%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTMzNTgxOGItNDljZC00NmExLTgyYmYtNTA3Y2I5ODYzOWIz%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_N2FkYjFlNDktYjhkNy00MGFmLTg2ZTMtNzgxYzU5NDZmYzM0%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_YTIwZDVkZGUtMWVmYy00NmM3LWI0YjYtZTFjZjRkMWQ2YjQ5%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjczYTc0YjItMjc4MC00YWVlLWExOTUtMWY1ZWQ5Nzg4NDFh%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_MjEwMzQzNTgtYjA4Ni00ZTk1LTkxODYtNWNiZDc0NWVkYzJl%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NmQxNDFmY2UtMTlmMC00NjhiLWFiNTYtNmRhZmMxNGM5ZTM2%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NWZiYjdhMDQtMzFhYS00ZjgzLWEzNmItOWRjZDY5ZGRhMTcz%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NmM1M2M2ZTktYmQ2Yy00ZTk2LWE1ZjktMTZmMWFiM2MwMmIx%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTg0MTdmNTQtMThjYy00MmFmLWJmODItZjk2ZmYyOTAwOTE1%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2EyN2E4MTAtMDk3MC00NzBlLWEwMjYtOWJjZmM0ZWIyMzU2%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NGVhNWRjMzEtNzUwNy00MmJhLThiM2EtOWY5MzE4NjY3YWI5%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_YjA4Njc4ZjEtMGYwZS00NGU1LTk3NGUtNGVmYWE0MTk4Mzk3%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NDgwNTdmYTItZDNkMi00YzNmLWFlYWEtMGJkZjU0YWI0MmYz%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_YmE4NDlhZGMtMmQxMy00YzQ3LWFiMTUtZjYzNGU2ODYxYzU2%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_YzY3NTlhZjAtMWJlNC00ZGZmLThhZGQtNDYwZTExMWNjZWM5%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTk1ZWFlYmUtM2Y0Ny00Nzk0LWEwOTctNjRlYmJlNjY4M2Y3%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_YWI1NjEyZDQtNjZhMy00MDFlLTkxNjQtMzViODZhYjE1NmY0%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDIzZWVhODgtNzQ5YS00ZWEzLThlMzUtOGQ5ODk3NGE4YjEw%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_Mzg2MTNmNjgtNGVlYy00MTM5LThiMjYtZGVjNDM1MDljY2U1%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_YTMwMGQyZDAtNjY2Yi00Zjk2LTllNTAtMWU3MDA5Zjc1OTJl%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTFmNzkzNWItODgzNy00NDZlLWExZTAtODc3OTk3YTUyYWI3%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjMwZTRlZWUtMjdlNC00OTE1LWEwMzEtNGI1YzhlNmU1NGVl%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjA2NzU3ODMtZDJmNi00NGZjLWI0ZDAtZDQwMzU3ODZiZGQx%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjdlOTU5MmUtYzljMi00NDA1LThhMjktM2M5ZWYyMDE1NjM3%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZGU4ZDhkYWYtZmM1MS00YTlhLTljMWEtZjNiOGI1YzE1YzYz%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjNkYTJmNWQtMjk5NS00Zjg1LWIxZTEtZDliY2I3NzIwZmJh%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTQyYTQ1NjktZWU3YS00NjEzLThiMTgtZjhkNTRiOTVmYjli%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzVlMDY2NDItOTNmZi00ZjU1LWE4Y2MtYjgwYmM0ZWQyYWYz%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZmYwYWJkZGQtOGQwMC00ZDE1LWEwOTAtYmM0ZTZkNjVjOTdh%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGI3NTM5ZDUtMGFjZS00MDNiLWEzMTMtMWRiNzI4NTBhYWE2%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGM1YTk1MTktODliOS00NGE2LWFiZDUtOGUzODI0YTZmMjU3%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTc3NjVjMWUtMWVjYi00ZjViLWI2MTktOGJlOGMwYmJlNDMw%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_YmJiODI5OWItZjYzOC00YTZlLTgxZTUtOTQ2OWE4M2NkMjcy%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjM0MDc5N2MtNWZkYi00Y2E3LTlkYzctOWMyYzg5ZmZlMDll%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ODk4M2VlZjktZDRhMy00Njk5LWE5YWYtN2ZlNjgzYjc5OTdi%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzE3ZGRhMjEtOTMzYy00MjFhLTljMDQtNjdkNzYyNjcwMDM5%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_MDI4NTZmYjctOGMxZS00M2Q2LWExZjAtNTA0YTM4ZGFhOTdh%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NmE0NmYxZmQtYzMyOS00NWNhLWFiZGYtZTQzYWNjODcwZDQw%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGI2OWM0NjUtNGVlNC00ZmMwLTk5OGEtNDdiN2FhNTY3Njkx%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZGMxZGRhZTktY2U3Ny00Zjc4LTk5OTAtYjY5ZDdkMGY4YjBm%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_MWRkMWNjNTItYmMwZS00MjlkLWE1YjgtMjJiYWZkMTFkMGJi%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_YjRhZWIyMjEtODFkNS00M2UzLThlN2QtYmM1YmE1ZDM0ZGEw%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTVlMGUzMzQtOTI0NS00ZGI2LTk4ZjItOTVhZDJjNWI4ZmU4%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_MjY5NzY0MjAtMmY5OS00ZTgwLWIwYjgtNWFlZDEyZTY2M2Nh%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/meet/246852258070820?p=InScUHT6HMNvJQcQh1","https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzhjY2VjYmEtZDllNC00YzhhLWE4MGEtNzFiNTM2OWVlOGEy%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_YjhiYjkwMzItOTk2Ny00ODVkLWE1NDEtNTIwZjBlY2FhMDY0%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZWM5MDI5MDMtMzE5Yy00MWM4LWE5MDctMzA0NDE5YjAwOTk5%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NWQ1NzUyZmUtOTEyNi00N2Y0LTgxYTYtNmJkZGY5ZTFiNjgw%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGIyYTk0OTEtN2UwNC00NTlmLWI1YjktYjFmOTliNjc3YTQ4%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzA4NzkxYTktNmIzOS00M2FiLTk3MjUtYmMxNDI5Y2Q0ZWQz%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NmI1ZmNiNWEtYmM0NC00OThhLWE4OTctYmQ0YjRjOWU2NDI4%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjEzYmZkOTMtOGEyOS00NDk1LWEzZTItYWEwNWZmODM3ZGUz%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzEzYzlkZTYtNTk3ZC00MzgxLWFlMDYtZWIxMGQxZGUzZDQ1%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_YzhiYThlOTctZDNhNi00Mjc4LTgwODMtZDE3MTYyZDgyMjE4%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NWM3MjNmM2EtMDQ1MC00Y2M2LTkyOTQtZDBkNzk0ZjI1YzFk%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NWNhMWMxYjYtODliMC00OWQ1LTk3MzYtMTliZjJjMTdhNDhm%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_YTk0MTYxMzctNjg1YS00MDQzLTg5NWYtMWQzOWYyYjdhNzEy%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZmUxZDk5NzAtMDA2MS00ZDBiLWE5NWMtNmQ1MTUxOTM3ZTM5%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTIyODdkYmQtYTE5NC00NGNiLTgyMDYtOWVjOTk2YmFiZDQ0%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d","https://teams.microsoft.com/l/meetup-join/19%3ameeting_NDVjM2U4Y2MtYTJiNy00NWQ3LWJjMWUtZDg2N2I4NDUzOThk%40thread.v2/0?context=%7b%22Tid%22%3a%22842f008c-66d0-4aca-ae10-9e139a8c8f17%22%2c%22Oid%22%3a%224e23fbab-db77-4381-80eb-b2111e3d398c%22%7d"],"R":[[0,0,0,0,0,0,0,0,0,"RP",0,0],[1,0,1,1,1,1,1,1,1,"P",0,1],[2,1,2,2,1,1,2,2,2,"P",0,1],[3,1,3,3,1,1,3,3,3,"P",0,1],[4,2,4,4,1,1,4,4,4,"P",0,1],[5,2,2,2,1,1,1,2,2,"P",0,1],[6,3,5,5,1,1,5,5,5,"S",1,1],[7,4,1,1,1,1,6,1,1,"P",0,1],[8,4,4,4,1,1,2,4,4,"P",0,1],[9,4,2,2,1,1,2,2,2,"P",0,1],[10,5,6,6,1,1,1,6,6,"P",0,1],[11,5,7,7,1,1,7,7,7,"P",0,1],[12,5,8,8,1,1,2,8,8,"P",0,1],[13,6,9,9,1,1,8,9,9,"P",0,1],[14,6,7,7,1,1,9,7,7,"P",0,1],[15,6,8,8,1,1,10,8,8,"P",0,1],[16,7,6,6,1,1,3,6,6,"P",0,1],[17,7,1,1,1,1,11,1,1,"P",0,1],[18,7,9,9,1,1,12,9,9,"P",0,1],[19,8,10,10,1,1,13,10,10,"P",0,1],[20,8,2,2,1,1,14,2,2,"P",0,1],[21,8,5,5,1,1,1,5,5,"S",1,1],[22,8,0,0,1,1,11,0,0,"P",0,1],[23,9,6,6,1,1,2,6,6,"P",0,1],[24,9,7,7,1,1,15,7,7,"P",0,1],[25,9,9,9,2,2,16,9,9,"RP",0,0],[26,10,11,11,1,1,17,11,5,"S",2,1],[27,10,5,5,1,1,9,5,5,"S",1,1],[28,11,10,10,1,1,1,10,10,"P",0,1],[29,12,12,12,1,1,2,12,11,"P",0,1],[30,12,5,5,1,1,2,5,5,"S",1,1],[31,13,9,9,1,1,16,9,9,"P",0,1],[32,13,8,8,1,1,10,8,8,"P",0,1],[33,13,4,4,1,1,7,4,4,"P",0,1],[34,14,11,11,1,1,18,11,5,"S",2,1],[35,15,10,10,1,1,19,10,10,"P",0,1],[36,16,8,8,1,1,20,8,8,"P",0,1],[37,17,11,11,1,1,1,11,5,"S",2,1],[38,18,9,9,1,1,21,9,9,"P",0,1],[39,18,11,11,1,1,22,11,5,"S",2,1],[40,18,9,9,2,2,23,9,9,"RP",0,0],[41,19,6,6,1,1,9,6,6,"P",0,1],[42,19,7,7,1,1,9,7,7,"P",0,1],[43,20,3,3,1,1,24,3,3,"P",0,1],[44,20,5,5,1,1,23,5,5,"S",1,1],[45,21,4,4,3,3,1,4,4,"RP",0,0],[46,22,9,9,1,1,2,9,9,"P",0,1],[47,22,2,2,1,1,11,2,2,"P",0,1],[48,22,9,9,1,1,2,13,5,"S",2,1],[49,22,3,3,1,1,11,3,3,"P",0,1],[50,23,6,6,1,1,25,6,6,"P",0,1],[51,23,7,7,1,1,26,7,7,"P",0,1],[52,23,1,1,4,4,11,1,1,"RP",0,0],[53,24,12,12,1,1,16,12,11,"P",0,1],[54,24,4,4,1,1,8,4,4,"P",0,1],[55,24,8,8,1,1,2,8,8,"P",0,1],[56,25,12,12,1,1,1,12,11,"P",0,1],[57,26,4,4,1,1,27,4,4,"P",0,1],[58,26,8,8,1,1,10,8,8,"P",0,1],[59,27,9,9,1,1,9,13,5,"S",2,1],[60,27,3,3,1,1,28,3,3,"P",0,1],[61,27,0,0,1,1,1,0,0,"P",0,1],[62,28,1,1,1,1,29,1,1,"P",0,1],[63,28,12,12,1,1,1,12,11,"P",0,1],[64,28,11,11,1,1,15,11,5,"S",2,1],[65,29,9,9,1,1,2,9,9,"P",0,1],[66,29,3,3,1,1,30,3,3,"P",0,1],[67,29,6,6,1,1,31,6,6,"P",0,1],[68,29,5,5,1,1,30,5,5,"S",1,1],[69,30,0,0,1,1,2,0,0,"P",0,1],[70,30,11,11,1,1,15,11,5,"S",2,1],[71,30,12,12,1,1,32,12,11,"P",0,1],[72,0,13,13,5,5,1,14,12,"P",0,1],[73,0,14,14,5,5,33,15,13,"P",0,1],[74,0,15,15,5,5,34,5,14,"P",0,1],[75,1,16,16,6,6,11,16,15,"RP",0,2],[76,1,17,17,5,5,35,17,16,"P",0,1],[77,2,15,15,5,5,1,5,14,"P",0,1],[78,2,18,18,5,5,36,18,17,"P",0,1],[79,3,19,19,5,5,1,19,18,"P",0,1],[80,4,16,16,5,5,32,10,19,"P",0,1],[81,4,18,18,5,5,6,18,17,"P",0,1],[82,4,15,15,5,5,37,5,14,"P",0,1],[83,4,20,20,5,5,38,20,20,"P",0,1],[84,5,21,21,5,5,1,21,5,"S",1,1],[85,6,8,8,5,5,7,8,8,"P",0,1],[86,6,19,19,5,5,10,19,18,"P",0,1],[87,6,13,13,5,5,39,14,12,"P",0,1],[88,7,16,16,5,5,3,10,19,"P",0,1],[89,7,20,20,5,5,40,20,20,"P",0,1],[90,8,13,13,5,5,9,14,12,"P",0,1],[91,8,19,19,5,5,2,19,18,"P",0,1],[92,8,22,22,5,5,2,22,5,"S",3,1],[93,8,21,21,5,5,41,21,5,"S",1,1],[94,31,23,7,5,5,2,23,21,"P",0,1],[95,31,18,18,5,5,1,18,17,"P",0,1],[96,31,24,23,5,5,27,24,22,"P",0,1],[97,9,8,8,5,5,15,8,8,"P",0,1],[98,9,19,19,5,5,1,19,18,"P",0,1],[99,10,18,18,5,5,1,18,17,"P",0,1],[100,10,8,8,5,5,2,8,8,"P",0,1],[101,10,14,14,5,5,20,15,13,"P",0,1],[102,11,24,23,5,5,25,24,22,"P",0,1],[103,11,14,14,5,5,1,15,13,"P",0,1],[104,11,25,24,7,7,5,25,23,"RP",0,2],[105,12,16,16,5,5,30,10,19,"P",0,1],[106,12,14,14,5,5,9,15,13,"P",0,1],[107,12,15,15,5,5,9,5,14,"P",0,1],[108,13,20,20,5,5,13,20,20,"P",0,1],[109,14,24,23,5,5,33,24,22,"P",0,1],[110,14,19,19,5,5,5,19,18,"P",0,1],[111,15,24,23,5,5,42,24,22,"P",0,1],[112,15,25,24,5,5,2,26,24,"P",0,1],[113,16,16,16,5,5,42,10,19,"P",0,1],[114,16,25,24,5,5,43,26,24,"P",0,1],[115,17,13,13,6,6,44,14,12,"RP",0,2],[116,17,21,21,8,8,1,27,25,"RP",0,2],[117,18,17,17,5,5,45,17,16,"P",0,1],[118,18,8,8,3,3,2,8,8,"RP",0,2],[119,19,25,24,5,5,2,26,24,"P",0,1],[120,20,23,7,5,5,10,23,21,"P",0,1],[121,20,8,8,5,5,1,8,8,"P",0,1],[122,20,19,19,5,5,9,19,18,"P",0,1],[123,22,17,17,9,9,16,17,16,"RP",0,2],[124,22,22,22,5,5,1,22,5,"S",3,1],[125,23,24,23,5,5,24,24,22,"P",0,1],[126,24,20,20,5,5,28,20,20,"P",0,1],[127,24,18,18,5,5,8,18,17,"P",0,1],[128,24,15,15,5,5,42,5,14,"P",0,1],[129,25,17,17,5,5,30,17,16,"P",0,1],[130,26,24,23,5,5,31,24,22,"P",0,1],[131,26,14,14,5,5,23,15,13,"P",0,1],[132,26,25,24,5,5,2,26,24,"P",0,1],[133,26,18,18,5,5,30,18,17,"P",0,1],[134,27,16,16,5,5,46,10,19,"P",0,1],[135,27,17,17,5,5,47,17,16,"P",0,1],[136,28,20,20,5,5,48,20,20,"P",0,1],[137,28,15,15,5,5,42,5,14,"P",0,1],[138,29,8,8,5,5,10,8,8,"P",0,1],[139,29,23,7,5,5,10,23,21,"P",0,1],[68,29,25,24,5,5,26,26,24,"P",0,1],[140,29,21,21,5,5,30,21,5,"S",1,1],[141,30,17,17,5,5,49,17,16,"P",0,1],[142,30,20,20,5,5,15,20,20,"P",0,1],[143,0,9,9,2,2,33,9,9,"RP",0,3],[144,1,9,9,0,0,50,13,5,"S",2,1],[145,1,23,7,0,0,2,23,21,"P",0,1],[146,2,26,25,0,0,1,28,26,"P",0,1],[147,3,27,26,0,0,5,29,27,"P",0,1],[148,4,19,19,0,0,2,19,5,"S",1,1],[149,4,28,27,0,0,9,30,28,"P",0,1],[150,5,23,7,0,0,1,23,21,"P",0,1],[151,5,29,28,0,0,37,31,29,"P",0,1],[87,6,19,19,0,0,27,19,5,"S",1,1],[152,6,26,25,0,0,51,28,26,"P",0,1],[153,6,27,26,0,0,51,29,27,"P",0,1],[154,7,23,7,0,0,30,23,21,"P",0,1],[155,7,19,19,0,0,1,19,5,"S",1,1],[89,7,27,26,0,0,31,32,5,"S",2,1],[156,8,26,25,0,0,2,28,26,"P",0,1],[157,8,0,0,0,0,2,0,0,"P",0,1],[158,31,23,7,0,0,30,23,21,"P",0,1],[159,31,10,10,0,0,52,10,10,"P",0,1],[160,31,19,19,0,0,2,19,5,"S",1,1],[161,9,26,25,0,0,11,28,26,"P",0,1],[97,9,30,29,0,0,51,33,30,"P",0,1],[162,9,27,26,0,0,53,29,27,"P",0,1],[163,10,30,29,0,0,10,33,30,"P",0,1],[164,10,9,9,0,0,30,13,5,"S",2,1],[165,10,31,30,0,0,12,34,31,"P",0,1],[166,10,29,28,0,0,47,31,29,"P",0,1],[167,11,9,9,0,0,33,13,5,"S",2,1],[104,11,32,31,10,10,33,35,32,"RP",0,3],[168,12,31,30,0,0,7,34,31,"P",0,1],[169,12,19,19,0,0,16,19,5,"S",1,1],[170,12,29,28,0,0,51,31,29,"P",0,1],[171,12,28,27,0,0,2,30,28,"P",0,1],[108,13,27,26,0,0,1,29,27,"P",0,1],[172,13,33,32,0,0,9,36,33,"P",0,1],[173,13,31,30,0,0,2,34,31,"P",0,1],[174,14,0,0,0,0,1,0,0,"P",0,1],[112,15,32,31,0,0,2,35,32,"P",0,1],[175,15,29,28,0,0,9,31,29,"P",0,1],[176,15,27,26,0,0,2,29,27,"P",0,1],[177,16,30,29,0,0,16,33,30,"P",0,1],[178,16,33,32,0,0,54,36,33,"P",0,1],[179,16,31,30,0,0,20,34,31,"P",0,1],[115,17,19,19,9,9,44,19,18,"RP",0,3],[180,18,10,10,0,0,3,10,10,"P",0,1],[181,18,31,30,11,11,55,34,31,"RP",0,3],[182,18,27,26,0,0,2,29,27,"P",0,1],[183,20,28,27,0,0,27,30,28,"P",0,1],[43,20,30,29,0,0,24,33,30,"P",0,1],[184,20,26,25,0,0,20,28,26,"P",0,1],[185,21,10,10,12,12,16,16,34,"RP",0,3],[186,22,33,32,0,0,56,36,33,"P",0,1],[187,22,31,30,0,0,29,34,31,"P",0,1],[188,22,10,10,0,0,29,10,10,"P",0,1],[189,23,0,0,0,0,25,0,0,"P",0,1],[190,23,30,29,0,0,37,33,30,"P",0,1],[191,23,32,31,0,0,2,35,32,"P",0,1],[192,23,28,27,0,0,9,30,28,"P",0,1],[193,24,32,31,0,0,57,35,32,"P",0,1],[194,24,10,10,0,0,58,10,10,"P",0,1],[195,24,33,32,0,0,59,36,33,"P",0,1],[196,25,9,9,0,0,2,13,5,"S",2,1],[197,25,32,31,0,0,2,35,32,"P",0,1],[132,26,32,31,0,0,2,35,32,"P",0,1],[198,26,28,27,0,0,2,30,28,"P",0,1],[199,27,23,7,0,0,8,23,21,"P",0,1],[200,28,33,32,0,0,28,36,33,"P",0,1],[201,29,9,9,0,0,9,13,5,"S",2,1],[140,29,26,25,0,0,30,28,26,"P",0,1],[202,30,10,10,0,0,1,10,10,"P",0,1],[203,30,23,7,0,0,27,23,21,"P",0,1],[204,0,26,25,4,4,1,37,35,"P",0,1],[205,0,34,33,4,4,1,38,36,"P",0,1],[206,2,12,12,4,4,1,12,5,"S",4,1],[207,3,12,12,4,4,5,12,5,"S",4,1],[208,3,35,34,4,4,1,3,37,"P",0,1],[209,4,23,7,4,4,1,39,38,"P",0,1],[80,4,36,35,4,4,49,40,39,"P",0,1],[210,4,34,33,4,4,60,38,36,"P",0,1],[211,5,1,1,4,4,2,1,1,"P",0,1],[212,5,23,7,4,4,30,39,38,"P",0,1],[213,6,37,36,4,4,51,41,40,"P",0,1],[214,7,0,0,4,4,9,0,0,"P",0,1],[215,7,12,12,4,4,2,12,5,"S",4,1],[91,8,38,37,4,4,9,42,41,"P",0,1],[216,8,39,38,2,2,2,43,42,"RP",0,4],[217,31,36,35,4,4,47,40,39,"P",0,1],[218,31,39,38,4,4,14,43,42,"P",0,1],[219,31,12,12,4,4,9,12,5,"S",4,1],[220,9,0,0,4,4,61,0,0,"P",0,1],[221,10,36,35,4,4,62,40,39,"P",0,1],[222,10,39,38,10,10,2,43,42,"RP",0,4],[223,10,38,37,4,4,26,42,41,"P",0,1],[224,11,23,7,4,4,1,39,38,"P",0,1],[225,11,35,34,4,4,1,3,37,"P",0,1],[169,12,39,38,4,4,16,43,42,"P",0,1],[226,12,26,25,4,4,9,37,35,"P",0,1],[227,12,37,36,4,4,63,41,40,"P",0,1],[228,12,35,34,4,4,16,3,37,"P",0,1],[229,13,0,0,4,4,51,0,0,"P",0,1],[230,13,35,34,4,4,2,3,37,"P",0,1],[231,13,38,37,4,4,2,42,41,"P",0,1],[232,13,26,25,4,4,9,37,35,"P",0,1],[233,15,1,1,4,4,10,1,1,"P",0,1],[234,15,37,36,4,4,2,41,40,"P",0,1],[235,16,38,37,4,4,10,42,41,"P",0,1],[236,16,40,39,4,4,28,44,43,"P",0,1],[237,18,36,35,4,4,51,40,39,"P",0,1],[238,18,23,7,4,4,2,39,38,"P",0,1],[239,19,35,34,4,4,10,3,37,"P",0,1],[42,19,40,39,4,4,2,44,43,"P",0,1],[240,20,37,36,4,4,1,41,40,"P",0,1],[241,20,40,39,4,4,2,44,43,"P",0,1],[242,21,40,39,4,4,1,44,43,"P",0,1],[243,21,26,25,4,4,6,37,35,"P",0,1],[244,23,26,25,4,4,1,37,35,"P",0,1],[245,23,38,37,4,4,26,42,41,"P",0,1],[246,24,37,36,4,4,57,41,40,"P",0,1],[247,24,39,38,9,9,57,43,42,"RP",0,4],[248,25,23,7,4,4,64,39,38,"P",0,1],[249,25,34,33,4,4,16,38,36,"P",0,1],[250,26,26,25,4,4,7,37,35,"P",0,1],[251,26,37,36,4,4,10,41,40,"P",0,1],[159,27,0,0,4,4,65,0,0,"P",0,1],[252,27,34,33,4,4,9,38,36,"P",0,1],[253,27,38,37,4,4,58,42,41,"P",0,1],[254,28,36,35,4,4,2,40,39,"P",0,1],[255,28,40,39,4,4,1,44,43,"P",0,1],[201,29,36,35,4,4,2,40,39,"P",0,1],[256,29,23,7,4,4,2,39,38,"P",0,1],[139,29,1,1,4,4,27,1,1,"P",0,1],[257,30,12,12,4,4,46,12,5,"S",4,1],[258,30,34,33,4,4,10,38,36,"P",0,1],[259,30,0,0,4,4,31,0,0,"P",0,1],[260,0,8,8,13,13,54,8,8,"P",0,1],[73,0,15,15,13,13,33,5,14,"P",0,1],[261,0,14,14,13,13,25,15,13,"P",0,1],[262,1,30,29,13,13,66,21,44,"P",0,1],[263,1,41,40,13,13,23,45,45,"P",0,1],[264,1,19,19,13,13,50,46,46,"P",0,1],[146,2,14,14,13,13,1,15,13,"P",0,1],[207,3,42,41,13,13,33,24,47,"P",0,1],[265,3,43,42,13,13,1,47,48,"P",0,1],[266,4,44,43,13,13,1,48,49,"P",0,1],[267,4,15,15,13,13,7,5,14,"P",0,1],[268,4,42,41,13,13,49,24,47,"P",0,1],[269,5,15,15,13,13,1,5,14,"P",0,1],[270,5,8,8,13,13,2,8,8,"P",0,1],[271,6,43,42,13,13,10,47,48,"P",0,1],[272,6,14,14,13,13,1,49,50,"P",0,1],[273,6,45,44,13,13,17,50,51,"P",0,1],[274,7,42,41,13,13,2,24,47,"P",0,1],[275,7,46,28,13,13,1,51,52,"P",0,1],[156,8,14,14,13,13,2,15,13,"P",0,1],[276,8,15,15,13,13,13,5,14,"P",0,1],[157,8,44,43,13,13,2,48,49,"P",0,1],[277,31,14,14,13,13,9,15,13,"P",0,1],[278,31,8,8,13,13,32,8,8,"P",0,1],[279,31,15,15,13,13,2,5,14,"P",0,1],[280,9,47,45,13,13,9,23,53,"P",0,1],[281,9,14,14,13,13,8,49,50,"P",0,1],[282,10,14,14,13,13,8,49,50,"P",0,1],[283,11,44,43,13,13,1,48,49,"P",0,1],[284,11,19,19,13,13,1,46,46,"P",0,1],[285,11,14,14,13,13,33,49,50,"P",0,1],[286,12,8,8,13,13,9,8,8,"P",0,1],[287,12,41,40,13,13,27,45,45,"P",0,1],[288,12,47,45,13,13,1,23,53,"P",0,1],[289,13,48,46,13,13,2,32,54,"P",0,1],[290,13,14,14,13,13,14,15,13,"P",0,1],[291,13,15,15,13,13,42,5,14,"P",0,1],[292,13,43,42,13,13,14,47,48,"P",0,1],[293,14,46,28,13,13,33,51,52,"P",0,1],[234,15,47,45,13,13,2,23,53,"P",0,1],[294,15,46,28,13,13,28,51,52,"P",0,1],[114,16,19,19,13,13,67,46,46,"P",0,1],[295,16,48,46,13,13,31,32,54,"P",0,1],[296,17,45,44,13,13,1,50,51,"P",0,1],[297,18,14,14,13,13,30,15,13,"P",0,1],[298,18,41,40,13,13,3,45,45,"P",0,1],[299,18,30,29,13,13,9,21,44,"P",0,1],[300,19,43,42,13,13,28,47,48,"P",0,1],[119,19,19,19,13,13,2,46,46,"P",0,1],[301,20,45,44,13,13,30,50,51,"P",0,1],[184,20,30,29,13,13,28,21,44,"P",0,1],[302,20,48,46,13,13,10,32,54,"P",0,1],[303,21,47,45,13,13,30,23,53,"P",0,1],[102,22,30,29,13,13,53,21,44,"P",0,1],[304,22,19,19,13,13,1,46,46,"P",0,1],[305,23,45,44,13,13,65,50,51,"P",0,1],[306,23,46,28,13,13,26,51,52,"P",0,1],[193,24,47,45,13,13,57,23,53,"P",0,1],[307,24,41,40,13,13,57,45,45,"P",0,1],[308,25,46,28,13,13,2,51,52,"P",0,1],[309,25,41,40,13,13,28,45,45,"P",0,1],[310,26,30,29,13,13,1,21,44,"P",0,1],[311,26,45,44,13,13,9,50,51,"P",0,1],[312,27,8,8,13,13,2,8,8,"P",0,1],[313,27,45,44,14,14,68,50,51,"RP",0,5],[314,28,8,8,13,13,16,8,8,"P",0,1],[315,28,42,41,13,13,1,24,47,"P",0,1],[316,28,44,43,13,13,1,48,49,"P",0,1],[317,29,46,28,13,13,9,51,52,"P",0,1],[318,29,44,43,13,13,36,48,49,"P",0,1],[319,29,19,19,13,13,11,46,46,"P",0,1],[320,30,14,14,13,13,20,49,50,"P",0,1],[321,30,41,40,13,13,1,45,45,"P",0,1],[322,30,47,45,13,13,1,23,53,"P",0,1],[143,0,37,36,15,15,48,41,40,"P",0,1],[323,0,49,47,15,15,20,2,55,"P",0,1],[324,1,49,47,15,15,17,2,55,"P",0,1],[325,1,33,32,15,15,69,36,33,"P",0,1],[326,1,3,3,15,15,51,13,5,"S",2,1],[327,2,50,14,15,15,2,28,56,"P",0,1],[328,3,38,37,15,15,5,42,41,"P",0,1],[329,4,36,35,15,15,2,52,57,"P",0,1],[330,4,49,47,15,15,51,2,55,"P",0,1],[331,5,49,47,15,15,15,2,55,"P",0,1],[332,5,28,27,15,15,51,30,28,"P",0,1],[14,6,28,27,15,15,70,30,28,"P",0,1],[333,6,33,32,15,15,2,36,33,"P",0,1],[213,6,38,37,15,15,51,42,41,"P",0,1],[334,6,7,7,15,15,29,7,7,"P",0,1],[88,7,37,36,15,15,2,41,40,"P",0,1],[335,7,49,47,15,15,50,2,55,"P",0,1],[336,7,51,48,15,15,2,53,58,"P",0,1],[19,8,51,48,15,15,10,53,58,"P",0,1],[337,8,37,36,15,15,42,41,40,"P",0,1],[93,8,50,14,15,15,9,28,56,"P",0,1],[338,31,50,14,15,15,27,54,59,"P",0,1],[339,31,50,14,15,15,15,28,56,"P",0,1],[340,31,3,3,15,15,2,13,5,"S",2,1],[341,9,38,37,15,15,2,42,41,"P",0,1],[342,9,3,3,15,15,15,13,5,"S",2,1],[163,10,3,3,15,15,2,13,5,"S",2,1],[256,10,5,5,15,15,2,5,60,"P",0,1],[343,11,33,32,15,15,13,36,33,"P",0,1],[344,11,50,14,15,15,26,28,56,"P",0,1],[345,12,33,32,15,15,10,36,33,"P",0,1],[226,12,7,7,15,15,61,7,7,"P",0,1],[227,12,38,37,15,15,40,42,41,"P",0,1],[228,12,36,35,15,15,16,52,57,"P",0,1],[31,13,37,36,15,15,16,41,40,"P",0,1],[346,13,28,27,15,15,2,30,28,"P",0,1],[347,13,5,5,15,15,9,5,60,"P",0,1],[291,13,50,14,15,15,11,54,59,"P",0,1],[348,14,50,14,15,15,33,54,59,"P",0,1],[349,15,52,49,15,15,2,55,5,"S",1,1],[350,15,50,14,15,15,9,28,56,"P",0,1],[177,16,3,3,15,15,16,13,5,"S",2,1],[351,16,33,32,15,15,42,36,33,"P",0,1],[352,17,49,47,15,15,71,2,55,"P",0,1],[353,18,52,49,15,15,3,55,5,"S",1,1],[354,18,28,27,15,15,70,30,28,"P",0,1],[355,18,50,14,15,15,70,54,59,"P",0,1],[356,19,51,48,15,15,23,53,58,"P",0,1],[357,19,5,5,15,15,2,5,60,"P",0,1],[358,20,5,5,15,15,30,5,60,"P",0,1],[302,20,52,49,15,15,40,55,5,"S",1,1],[359,21,51,48,15,15,1,53,58,"P",0,1],[360,22,28,27,15,15,45,30,28,"P",0,1],[361,22,38,37,15,15,2,42,41,"P",0,1],[362,23,51,48,15,15,37,53,58,"P",0,1],[363,23,52,49,15,15,26,55,5,"S",1,1],[364,23,50,14,15,15,44,28,56,"P",0,1],[365,24,52,49,15,15,57,55,5,"S",1,1],[194,24,36,35,15,15,58,52,57,"P",0,1],[250,26,7,7,15,15,13,7,7,"P",0,1],[366,26,5,5,15,15,2,5,60,"P",0,1],[367,26,3,3,15,15,72,13,5,"S",2,1],[368,27,37,36,15,15,47,41,40,"P",0,1],[253,27,5,5,15,15,47,5,60,"P",0,1],[314,28,36,35,15,15,16,52,57,"P",0,1],[369,28,50,14,15,15,3,54,59,"P",0,1],[370,28,51,48,15,15,2,53,58,"P",0,1],[371,29,52,49,15,15,3,55,5,"S",1,1],[372,30,33,32,15,15,27,36,33,"P",0,1],[373,30,38,37,15,15,30,42,41,"P",0,1],[374,0,14,14,3,3,0,49,50,"P",0,1],[375,0,31,30,3,3,73,34,31,"P",0,1],[376,1,53,50,3,3,13,55,61,"P",0,1],[263,1,7,7,3,3,74,7,7,"P",0,1],[377,1,14,14,3,3,35,49,50,"P",0,1],[327,2,14,14,3,3,2,49,50,"P",0,1],[378,3,8,8,3,3,1,8,8,"P",0,1],[208,3,30,29,3,3,5,21,44,"P",0,1],[379,4,4,4,3,3,75,4,4,"P",0,1],[149,4,54,51,3,3,49,56,62,"P",0,1],[380,5,55,52,3,3,15,57,63,"P",0,1],[381,5,27,26,3,3,2,29,27,"P",0,1],[382,5,56,53,3,3,2,35,64,"P",0,1],[383,6,27,26,3,3,76,29,27,"P",0,1],[384,6,7,7,3,3,77,7,7,"P",0,1],[385,6,37,36,3,3,29,41,40,"P",0,1],[153,6,55,52,3,3,17,57,63,"P",0,1],[386,7,55,52,3,3,31,57,63,"P",0,1],[387,7,56,53,3,3,42,35,64,"P",0,1],[388,7,8,8,3,3,2,8,8,"P",0,1],[389,8,54,51,3,3,27,58,65,"P",0,1],[337,8,54,51,3,3,42,56,62,"P",0,1],[390,8,8,8,3,3,2,8,8,"P",0,1],[391,31,55,52,3,3,17,57,63,"P",0,1],[159,31,30,29,3,3,27,21,44,"P",0,1],[280,9,37,36,3,3,57,41,40,"P",0,1],[220,9,15,15,3,3,10,59,66,"P",0,1],[392,10,4,4,3,3,8,4,4,"P",0,1],[393,10,7,7,3,3,20,7,7,"P",0,1],[394,11,8,8,3,3,13,8,8,"P",0,1],[395,11,56,53,3,3,33,35,64,"P",0,1],[396,12,56,53,3,3,20,35,64,"P",0,1],[397,12,4,4,3,3,2,4,4,"P",0,1],[106,12,2,2,3,3,27,2,2,"P",0,1],[398,12,15,15,3,3,51,59,66,"P",0,1],[229,13,15,15,3,3,3,59,66,"P",0,1],[399,13,27,26,3,3,2,29,27,"P",0,1],[231,13,37,36,3,3,2,41,40,"P",0,1],[293,14,2,2,3,3,13,2,2,"P",0,1],[174,14,15,15,3,3,33,59,66,"P",0,1],[400,15,55,52,3,3,78,57,63,"P",0,1],[401,16,2,2,3,3,30,2,2,"P",0,1],[236,16,53,50,3,3,30,55,61,"P",0,1],[118,18,30,29,3,3,3,21,44,"P",0,1],[39,18,14,14,3,3,15,49,50,"P",0,1],[402,19,14,14,3,3,59,49,50,"P",0,1],[403,20,2,2,3,3,2,2,2,"P",0,1],[404,20,27,26,3,3,2,29,27,"P",0,1],[405,20,37,36,3,3,2,41,40,"P",0,1],[241,20,53,50,3,3,3,55,61,"P",0,1],[185,21,30,29,3,3,16,21,44,"P",0,1],[406,22,4,4,3,3,9,4,4,"P",0,1],[49,22,30,29,3,3,2,21,44,"P",0,1],[189,23,15,15,3,3,2,59,66,"P",0,1],[190,23,54,51,3,3,26,58,65,"P",0,1],[407,24,55,52,3,3,75,57,63,"P",0,1],[408,24,54,51,3,3,11,58,65,"P",0,1],[308,25,2,2,3,3,37,2,2,"P",0,1],[56,25,53,50,3,3,3,55,61,"P",0,1],[409,26,8,8,3,3,79,8,8,"P",0,1],[410,26,54,51,3,3,30,56,62,"P",0,1],[411,26,54,51,3,3,3,58,65,"P",0,1],[412,27,27,26,3,3,2,29,27,"P",0,1],[413,27,8,8,3,3,58,8,8,"P",0,1],[414,27,15,15,3,3,2,59,66,"P",0,1],[255,28,53,50,3,3,45,55,61,"P",0,1],[415,28,7,7,3,3,2,7,7,"P",0,1],[416,28,37,36,3,3,42,41,40,"P",0,1],[417,29,37,36,3,3,2,41,40,"P",0,1],[418,29,27,26,3,3,2,29,27,"P",0,1],[419,30,2,2,3,3,2,2,2,"P",0,1],[420,30,14,14,3,3,35,49,50,"P",0,1],[202,30,30,29,3,3,28,21,44,"P",0,1],[321,30,7,7,3,3,2,7,7,"P",0,1],[421,0,20,20,10,10,1,60,67,"P",0,1],[422,0,30,29,10,10,80,33,30,"P",0,1],[375,0,28,27,10,10,24,30,28,"P",0,1],[423,1,40,39,10,10,51,44,43,"P",0,1],[424,1,20,20,10,10,2,60,67,"P",0,1],[326,1,39,38,10,10,51,43,42,"P",0,1],[328,3,32,31,10,10,5,35,32,"P",0,1],[425,3,56,53,10,10,13,19,68,"P",0,1],[329,4,10,10,10,10,2,16,34,"P",0,1],[148,4,48,46,10,10,6,32,54,"P",0,1],[426,4,20,20,10,10,32,60,67,"P",0,1],[427,4,56,53,10,10,2,19,68,"P",0,1],[270,5,39,38,10,10,7,43,42,"P",0,1],[85,6,39,38,10,10,9,43,42,"P",0,1],[428,6,28,27,10,10,8,30,28,"P",0,1],[275,7,15,15,10,10,40,59,66,"P",0,1],[429,8,3,3,10,10,2,3,3,"P",0,1],[20,8,30,29,10,10,2,21,44,"P",0,1],[216,8,40,39,10,10,32,44,43,"P",0,1],[430,31,3,3,10,10,81,3,3,"P",0,1],[278,31,39,38,10,10,2,43,42,"P",0,1],[431,31,1,1,10,10,27,38,69,"P",0,1],[341,9,32,31,10,10,2,35,32,"P",0,1],[342,9,10,10,10,10,82,10,10,"P",0,1],[432,10,20,20,10,10,70,60,67,"P",0,1],[393,10,56,53,10,10,20,19,68,"P",0,1],[433,10,31,30,10,10,29,34,31,"P",0,1],[434,10,30,29,10,10,11,33,30,"P",0,1],[435,11,40,39,10,10,42,44,43,"P",0,1],[344,11,30,29,10,10,26,33,30,"P",0,1],[29,12,31,30,10,10,16,34,31,"P",0,1],[436,12,15,15,10,10,20,59,66,"P",0,1],[437,12,25,24,10,10,2,26,24,"P",0,1],[173,13,20,20,10,10,30,60,67,"P",0,1],[230,13,10,10,10,10,83,10,10,"P",0,1],[438,15,20,20,10,10,9,60,67,"P",0,1],[35,15,25,24,10,10,21,26,24,"P",0,1],[439,17,3,3,10,10,84,3,3,"P",0,1],[354,18,31,30,10,10,70,34,31,"P",0,1],[440,18,3,3,10,10,2,3,3,"P",0,1],[441,18,25,24,10,10,74,26,24,"P",0,1],[442,19,48,46,10,10,28,32,54,"P",0,1],[443,19,28,27,10,10,2,30,28,"P",0,1],[444,20,30,29,10,10,12,33,30,"P",0,1],[445,20,32,31,10,10,2,35,32,"P",0,1],[446,20,40,39,10,10,3,44,43,"P",0,1],[121,20,39,38,10,10,3,43,42,"P",0,1],[447,21,48,46,10,10,6,32,54,"P",0,1],[243,21,15,15,10,10,13,59,66,"P",0,1],[448,22,25,24,10,10,2,26,24,"P",0,1],[449,22,30,29,10,10,56,33,30,"P",0,1],[186,22,1,1,10,10,2,38,69,"P",0,1],[361,22,32,31,10,10,2,35,32,"P",0,1],[245,23,32,31,10,10,2,35,32,"P",0,1],[51,23,28,27,10,10,25,30,28,"P",0,1],[306,23,15,15,10,10,2,59,66,"P",0,1],[128,24,3,3,10,10,3,3,3,"P",0,1],[450,24,48,46,10,10,9,32,54,"P",0,1],[451,25,40,39,10,10,2,44,43,"P",0,1],[452,26,40,39,10,10,2,44,43,"P",0,1],[453,26,32,31,10,10,2,35,32,"P",0,1],[454,26,25,24,10,10,2,26,24,"P",0,1],[455,26,30,29,10,10,9,33,30,"P",0,1],[456,27,56,53,10,10,2,19,68,"P",0,1],[457,28,30,29,10,10,42,21,44,"P",0,1],[200,28,1,1,10,10,61,38,69,"P",0,1],[417,29,3,3,10,10,2,3,3,"P",0,1],[66,29,10,10,10,10,27,10,10,"P",0,1],[71,30,31,30,10,10,2,34,31,"P",0,1],[458,30,56,53,10,10,2,19,68,"P",0,1],[204,0,7,7,16,16,33,7,7,"P",0,1],[376,1,21,21,16,16,74,21,70,"P",0,1],[324,1,57,54,16,16,17,61,71,"P",0,1],[206,2,18,18,16,16,5,62,5,"S",5,1],[147,3,57,54,16,16,50,61,71,"P",0,1],[267,4,46,28,16,16,51,51,52,"P",0,1],[459,4,21,21,16,16,6,21,70,"P",0,1],[11,5,21,21,16,16,2,21,70,"P",0,1],[460,5,31,30,16,16,2,34,31,"P",0,1],[383,6,54,51,16,16,50,58,65,"P",0,1],[15,6,18,18,16,16,2,62,5,"S",5,1],[461,6,49,47,16,16,2,2,55,"P",0,1],[462,6,7,7,16,16,2,7,7,"P",0,1],[155,7,49,47,16,16,56,2,55,"P",0,1],[215,7,22,22,16,16,29,22,5,"S",3,1],[463,7,23,7,16,16,9,23,21,"P",0,1],[464,8,23,7,16,16,85,23,21,"P",0,1],[95,31,35,34,16,16,2,3,37,"P",0,1],[279,31,46,28,16,16,30,51,52,"P",0,1],[465,9,22,22,16,16,59,22,5,"S",3,1],[466,9,46,28,16,16,23,51,52,"P",0,1],[467,10,49,47,16,16,21,2,55,"P",0,1],[223,10,56,53,16,16,2,19,68,"P",0,1],[394,11,18,18,16,16,13,62,5,"S",5,1],[395,11,23,7,16,16,33,23,21,"P",0,1],[436,12,46,28,16,16,50,51,52,"P",0,1],[287,12,23,7,16,16,2,23,21,"P",0,1],[468,12,55,52,16,16,30,57,63,"P",0,1],[288,12,56,53,16,16,51,19,68,"P",0,1],[469,13,57,54,16,16,50,61,71,"P",0,1],[399,13,54,51,16,16,2,58,65,"P",0,1],[32,13,22,22,16,16,30,22,5,"S",3,1],[232,13,7,7,16,16,2,7,7,"P",0,1],[470,14,35,34,16,16,9,3,37,"P",0,1],[471,15,21,21,16,16,21,21,70,"P",0,1],[472,15,49,47,16,16,10,2,55,"P",0,1],[235,16,56,53,16,16,50,19,68,"P",0,1],[237,18,31,30,16,16,2,34,31,"P",0,1],[181,18,22,22,16,16,2,22,5,"S",3,1],[298,18,23,7,16,16,27,23,21,"P",0,1],[473,19,57,54,16,16,17,61,71,"P",0,1],[474,19,22,22,16,16,50,22,5,"S",3,1],[475,20,55,52,16,16,3,57,63,"P",0,1],[403,20,46,28,16,16,9,51,52,"P",0,1],[404,20,54,51,16,16,2,58,65,"P",0,1],[476,20,18,18,16,16,30,62,5,"S",5,1],[359,21,35,34,16,16,13,3,37,"P",0,1],[477,22,56,53,16,16,2,19,68,"P",0,1],[478,22,46,28,16,16,2,51,52,"P",0,1],[102,22,57,54,16,16,19,61,71,"P",0,1],[124,22,54,51,16,16,10,58,65,"P",0,1],[244,23,7,7,16,16,25,7,7,"P",0,1],[362,23,54,51,16,16,37,58,65,"P",0,1],[479,23,56,53,16,16,16,19,68,"P",0,1],[195,24,55,52,16,16,22,57,63,"P",0,1],[307,24,23,7,16,16,2,23,21,"P",0,1],[451,25,49,47,16,16,2,2,55,"P",0,1],[480,25,18,18,16,16,64,62,5,"S",5,1],[131,26,7,7,16,16,51,7,7,"P",0,1],[454,26,35,34,16,16,2,3,37,"P",0,1],[481,26,49,47,16,16,9,2,55,"P",0,1],[482,27,21,21,16,16,86,21,70,"P",0,1],[368,27,31,30,16,16,11,34,31,"P",0,1],[254,28,31,30,16,16,9,34,31,"P",0,1],[483,29,57,54,16,16,10,61,71,"P",0,1],[484,29,18,18,16,16,30,62,5,"S",5,1],[485,30,31,30,16,16,27,34,31,"P",0,1],[258,30,54,51,16,16,87,58,65,"P",0,1],[486,30,7,7,16,16,61,7,7,"P",0,1],[373,30,56,53,16,16,30,19,68,"P",0,1],[261,0,58,55,11,11,30,61,72,"P",0,1],[487,1,17,17,11,11,9,63,5,"S",6,1],[488,1,47,45,11,11,63,23,5,"S",7,1],[5,2,41,40,11,11,1,45,45,"P",0,1],[489,3,17,17,11,11,54,63,5,"S",6,1],[9,4,41,40,11,11,49,45,45,"P",0,1],[82,4,55,52,11,11,26,57,63,"P",0,1],[83,4,51,48,11,11,27,53,58,"P",0,1],[150,5,47,45,11,11,1,23,5,"S",7,1],[332,5,53,50,11,11,9,55,5,"S",5,1],[490,6,59,56,11,11,16,7,73,"P",0,1],[491,6,51,48,11,11,88,53,58,"P",0,1],[333,6,55,52,11,11,2,57,63,"P",0,1],[334,6,41,40,11,11,1,45,45,"P",0,1],[274,7,31,30,11,11,2,34,31,"P",0,1],[492,7,55,52,11,11,89,57,63,"P",0,1],[493,7,51,48,11,11,57,53,58,"P",0,1],[90,8,17,17,11,11,14,63,5,"S",6,1],[429,8,47,45,11,11,1,23,5,"S",7,1],[494,8,29,28,11,11,2,64,74,"P",0,1],[217,31,35,34,11,11,1,65,75,"P",0,1],[495,9,59,56,11,11,13,7,73,"P",0,1],[496,9,4,4,11,11,1,22,5,"S",3,1],[221,10,35,34,11,11,10,65,75,"P",0,1],[27,10,43,42,11,11,2,47,48,"P",0,1],[28,11,4,4,11,11,1,22,5,"S",3,1],[497,12,58,55,11,11,59,61,72,"P",0,1],[397,12,31,30,11,11,10,34,31,"P",0,1],[171,12,35,34,11,11,10,65,75,"P",0,1],[498,13,41,40,11,11,2,45,45,"P",0,1],[346,13,53,50,11,11,3,55,5,"S",5,1],[347,13,43,42,11,11,9,47,48,"P",0,1],[110,14,43,42,11,11,33,47,48,"P",0,1],[470,14,4,4,11,11,90,22,5,"S",3,1],[471,15,53,50,11,11,91,55,5,"S",5,1],[499,15,31,30,11,11,9,34,31,"P",0,1],[401,16,29,28,11,11,27,64,74,"P",0,1],[500,18,17,17,11,11,9,63,5,"S",6,1],[297,18,58,55,11,11,2,61,72,"P",0,1],[440,18,47,45,11,11,2,23,5,"S",7,1],[357,19,43,42,11,11,9,47,48,"P",0,1],[358,20,43,42,11,11,2,47,48,"P",0,1],[242,21,53,50,11,11,13,55,5,"S",5,1],[501,21,59,56,11,11,84,7,73,"P",0,1],[502,22,51,48,11,11,16,53,58,"P",0,1],[477,22,59,56,11,11,1,7,73,"P",0,1],[47,22,29,28,11,11,57,64,74,"P",0,1],[360,22,53,50,11,11,2,55,5,"S",5,1],[191,23,59,56,11,11,2,7,73,"P",0,1],[192,23,35,34,11,11,37,65,75,"P",0,1],[503,24,55,52,11,11,35,57,63,"P",0,1],[504,24,31,30,11,11,8,34,31,"P",0,1],[505,24,35,34,11,11,2,65,75,"P",0,1],[197,25,59,56,11,11,51,7,73,"P",0,1],[506,26,53,50,11,11,2,55,5,"S",5,1],[366,26,43,42,11,11,9,47,48,"P",0,1],[198,26,35,34,11,11,2,65,75,"P",0,1],[59,27,47,45,11,11,42,23,5,"S",7,1],[507,27,29,28,11,11,28,64,74,"P",0,1],[508,27,58,55,11,11,15,61,72,"P",0,1],[509,28,4,4,11,11,1,22,5,"S",3,1],[510,29,47,45,11,11,30,23,5,"S",7,1],[419,30,29,28,11,11,10,64,74,"P",0,1],[511,30,31,30,11,11,50,34,31,"P",0,1],[512,0,17,17,14,14,43,63,76,"P",0,1],[74,0,3,3,14,14,34,13,5,"S",2,1],[377,1,60,57,14,14,35,66,77,"P",0,1],[425,3,23,7,14,14,5,39,38,"P",0,1],[427,4,23,7,14,14,6,39,38,"P",0,1],[513,4,40,39,14,14,6,67,78,"P",0,1],[211,5,55,52,14,14,3,57,63,"P",0,1],[84,5,45,44,14,14,1,50,51,"P",0,1],[382,5,23,7,14,14,9,39,38,"P",0,1],[490,6,56,53,14,14,51,35,64,"P",0,1],[514,6,12,12,14,14,2,68,79,"P",0,1],[214,7,12,12,14,14,9,68,79,"P",0,1],[277,31,60,57,14,14,42,66,77,"P",0,1],[430,31,17,17,14,14,51,63,76,"P",0,1],[24,9,40,39,14,14,32,67,78,"P",0,1],[515,9,3,3,14,14,67,13,5,"S",2,1],[516,9,12,12,14,14,59,68,79,"P",0,1],[517,10,45,44,14,14,2,50,51,"P",0,1],[433,10,40,39,14,14,2,67,78,"P",0,1],[360,12,40,39,14,14,2,67,78,"P",0,1],[107,12,3,3,14,14,2,13,5,"S",2,1],[518,13,3,3,14,14,1,13,5,"S",2,1],[519,14,55,52,14,14,33,57,63,"P",0,1],[520,15,60,57,14,14,78,66,77,"P",0,1],[521,15,17,17,14,14,59,63,76,"P",0,1],[522,16,45,44,14,14,2,50,51,"P",0,1],[523,17,55,52,14,14,6,57,63,"P",0,1],[500,18,12,12,14,14,2,68,79,"P",0,1],[299,18,45,44,14,14,92,50,51,"P",0,1],[402,19,60,57,14,14,59,66,77,"P",0,1],[524,20,60,57,14,14,10,66,77,"P",0,1],[525,20,23,7,14,14,2,39,38,"P",0,1],[526,20,45,44,14,14,12,50,51,"P",0,1],[303,21,56,53,14,14,24,35,64,"P",0,1],[48,22,56,53,14,14,2,35,64,"P",0,1],[527,23,56,53,14,14,2,35,64,"P",0,1],[528,23,55,52,14,14,2,57,63,"P",0,1],[529,23,17,17,14,14,26,63,76,"P",0,1],[530,24,55,52,14,14,59,57,63,"P",0,1],[531,24,56,53,14,14,11,35,64,"P",0,1],[309,25,17,17,14,14,2,63,76,"P",0,1],[452,26,12,12,14,14,50,68,79,"P",0,1],[532,27,23,7,14,14,13,39,38,"P",0,1],[533,27,3,3,14,14,50,13,5,"S",2,1],[534,28,23,7,14,14,28,39,38,"P",0,1],[535,28,3,3,14,14,2,13,5,"S",2,1],[536,29,45,44,14,14,20,50,51,"P",0,1],[537,29,40,39,14,14,3,67,78,"P",0,1],[538,30,40,39,14,14,2,67,78,"P",0,1],[539,30,55,52,14,14,16,57,63,"P",0,1],[420,30,60,57,14,14,93,66,77,"P",0,1],[322,30,56,53,14,14,1,35,64,"P",0,1],[260,0,39,38,2,2,33,43,42,"P",0,1],[540,0,59,56,2,2,43,7,5,"S",1,1],[541,1,61,58,2,2,94,54,80,"P",0,1],[4,2,50,14,2,2,4,28,56,"P",0,1],[79,3,47,45,2,2,1,23,53,"P",0,1],[542,4,49,47,2,2,49,69,81,"P",0,1],[543,4,53,50,2,2,2,55,61,"P",0,1],[330,4,61,58,2,2,72,54,80,"P",0,1],[385,6,47,45,2,2,12,23,53,"P",0,1],[544,6,34,33,2,2,2,70,82,"P",0,1],[335,7,61,58,2,2,2,54,80,"P",0,1],[545,7,44,43,2,2,13,48,49,"P",0,1],[389,8,39,38,2,2,14,43,42,"P",0,1],[546,31,9,9,2,2,42,9,9,"P",0,1],[547,9,44,43,2,2,2,48,49,"P",0,1],[548,9,61,58,2,2,11,54,80,"P",0,1],[549,10,50,14,2,2,28,28,56,"P",0,1],[101,10,5,5,2,2,9,5,60,"P",0,1],[550,11,61,58,2,2,1,54,80,"P",0,1],[225,11,39,38,2,2,1,43,42,"P",0,1],[345,12,50,14,2,2,10,28,56,"P",0,1],[551,12,49,47,2,2,51,69,81,"P",0,1],[552,13,59,56,2,2,9,7,5,"S",1,1],[553,15,53,50,2,2,95,55,61,"P",0,1],[554,15,49,47,2,2,9,69,81,"P",0,1],[555,16,9,9,2,2,79,9,9,"P",0,1],[296,17,34,33,2,2,1,70,82,"P",0,1],[439,17,59,56,2,2,13,7,5,"S",1,1],[117,18,50,14,2,2,10,28,56,"P",0,1],[355,18,5,5,2,2,7,5,60,"P",0,1],[473,19,50,14,2,2,17,28,56,"P",0,1],[556,19,34,33,2,2,1,70,82,"P",0,1],[557,19,49,47,2,2,56,69,81,"P",0,1],[475,20,59,56,2,2,28,7,5,"S",1,1],[405,20,34,33,2,2,9,70,82,"P",0,1],[478,22,5,5,2,2,3,5,60,"P",0,1],[304,22,47,45,2,2,1,23,53,"P",0,1],[479,23,47,45,2,2,2,23,53,"P",0,1],[126,24,34,33,2,2,9,70,82,"P",0,1],[246,24,47,45,2,2,50,23,53,"P",0,1],[558,25,49,47,2,2,8,69,81,"P",0,1],[559,25,50,14,2,2,30,28,56,"P",0,1],[560,25,5,5,2,2,8,5,60,"P",0,1],[561,26,44,43,2,2,2,48,49,"P",0,1],[310,26,61,58,2,2,27,54,80,"P",0,1],[562,26,53,50,2,2,2,55,61,"P",0,1],[411,26,39,38,2,2,16,43,42,"P",0,1],[199,27,59,56,2,2,8,7,5,"S",1,1],[507,27,5,5,2,2,3,5,60,"P",0,1],[136,28,34,33,2,2,96,70,82,"P",0,1],[416,28,47,45,2,2,96,23,53,"P",0,1],[510,29,9,9,2,2,79,9,9,"P",0,1],[67,29,5,5,2,2,2,5,60,"P",0,1],[203,30,59,56,2,2,16,7,5,"S",1,1],[540,0,37,36,6,6,48,41,40,"P",0,1],[424,1,35,34,6,6,2,3,37,"P",0,1],[76,1,51,48,6,6,35,71,83,"P",0,1],[77,2,37,36,6,6,1,41,40,"P",0,1],[265,3,13,13,6,6,16,14,12,"P",0,1],[563,4,6,6,6,6,2,37,84,"P",0,1],[564,4,37,36,6,6,49,41,40,"P",0,1],[543,4,13,13,6,6,2,14,12,"P",0,1],[513,4,7,7,6,6,50,7,7,"P",0,1],[269,5,6,6,6,6,9,37,84,"P",0,1],[212,5,47,45,6,6,97,23,53,"P",0,1],[565,6,22,22,6,6,2,22,5,"S",3,1],[566,6,13,13,6,6,9,14,12,"P",0,1],[567,7,35,34,6,6,2,3,37,"P",0,1],[492,7,24,23,6,6,58,24,22,"P",0,1],[276,8,6,6,6,6,9,37,84,"P",0,1],[568,8,7,7,6,6,2,7,7,"P",0,1],[569,31,16,16,6,6,1,16,15,"P",0,1],[570,31,6,6,6,6,1,37,84,"P",0,1],[495,9,47,45,6,6,76,23,53,"P",0,1],[571,9,16,16,6,6,2,16,15,"P",0,1],[572,9,51,48,6,6,31,71,83,"P",0,1],[573,10,24,23,6,6,57,24,22,"P",0,1],[574,10,37,36,6,6,42,41,40,"P",0,1],[468,12,24,23,6,6,27,24,22,"P",0,1],[575,12,51,48,6,6,2,71,83,"P",0,1],[552,13,37,36,6,6,2,41,40,"P",0,1],[576,13,16,16,6,6,2,16,15,"P",0,1],[233,15,24,23,6,6,27,24,22,"P",0,1],[520,15,51,48,6,6,78,71,83,"P",0,1],[499,15,22,22,6,6,2,22,5,"S",3,1],[555,16,47,45,6,6,79,23,53,"P",0,1],[182,18,24,23,6,6,2,24,22,"P",0,1],[443,19,7,7,6,6,10,7,7,"P",0,1],[577,19,16,16,6,6,1,16,15,"P",0,1],[183,20,16,16,6,6,9,16,15,"P",0,1],[578,20,47,45,6,6,2,23,53,"P",0,1],[501,21,47,45,6,6,6,23,53,"P",0,1],[406,22,35,34,6,6,1,3,37,"P",0,1],[579,23,22,22,6,6,37,22,5,"S",3,1],[529,23,13,13,6,6,26,14,12,"P",0,1],[503,24,24,23,6,6,35,24,22,"P",0,1],[580,25,35,34,6,6,10,3,37,"P",0,1],[358,25,16,16,6,6,41,16,15,"P",0,1],[560,25,6,6,6,6,8,37,84,"P",0,1],[409,26,22,22,6,6,10,22,5,"S",3,1],[311,26,51,48,6,6,10,71,83,"P",0,1],[482,27,7,7,6,6,1,7,7,"P",0,1],[532,27,13,13,6,6,1,14,12,"P",0,1],[581,27,22,22,6,6,58,22,5,"S",3,1],[62,28,35,34,6,6,11,3,37,"P",0,1],[415,28,13,13,6,6,28,14,12,"P",0,1],[536,29,51,48,6,6,20,71,83,"P",0,1],[256,29,47,45,6,6,1,23,53,"P",0,1],[537,29,7,7,6,6,2,7,7,"P",0,1],[538,30,7,7,6,6,2,7,7,"P",0,1],[486,30,6,6,6,6,2,37,84,"P",0,1],[512,0,42,41,17,17,48,24,47,"P",0,1],[582,1,12,12,17,17,2,68,79,"P",0,1],[583,2,12,12,17,17,5,68,79,"P",0,1],[489,3,2,2,17,17,36,2,2,"P",0,1],[584,4,62,59,17,17,44,1,85,"P",0,1],[585,5,40,39,17,17,1,44,43,"P",0,1],[13,6,5,5,17,17,8,5,60,"P",0,1],[491,6,52,49,17,17,88,72,86,"P",0,1],[586,7,62,59,17,17,61,1,85,"P",0,1],[493,7,52,49,17,17,39,72,86,"P",0,1],[18,7,5,5,17,17,2,5,60,"P",0,1],[22,8,40,39,17,17,30,44,43,"P",0,1],[431,31,62,59,17,17,1,1,85,"P",0,1],[571,9,5,5,17,17,2,5,60,"P",0,1],[572,9,52,49,17,17,35,72,86,"P",0,1],[100,10,36,35,17,17,1,40,39,"P",0,1],[165,10,34,33,17,17,42,70,82,"P",0,1],[435,11,2,2,17,17,33,2,2,"P",0,1],[286,12,36,35,17,17,30,40,39,"P",0,1],[105,12,5,5,17,17,10,5,60,"P",0,1],[575,12,52,49,17,17,9,72,86,"P",0,1],[398,12,40,39,17,17,1,44,43,"P",0,1],[576,13,5,5,17,17,2,5,60,"P",0,1],[587,13,2,2,17,17,28,2,2,"P",0,1],[290,13,52,49,17,17,98,72,86,"P",0,1],[553,15,42,41,17,17,99,24,47,"P",0,1],[588,15,36,35,17,17,1,40,39,"P",0,1],[295,16,2,2,17,17,40,2,2,"P",0,1],[474,19,12,12,17,17,9,68,79,"P",0,1],[300,19,42,41,17,17,2,24,47,"P",0,1],[589,20,34,33,17,17,1,70,82,"P",0,1],[446,20,2,2,17,17,31,2,2,"P",0,1],[578,20,34,33,17,17,3,38,36,"P",0,1],[590,21,12,12,17,17,6,68,79,"P",0,1],[591,22,34,33,17,17,1,70,82,"P",0,1],[188,22,36,35,17,17,2,40,39,"P",0,1],[592,24,34,33,17,17,9,38,36,"P",0,1],[55,24,34,33,17,17,2,70,82,"P",0,1],[408,24,36,35,17,17,3,40,39,"P",0,1],[593,25,40,39,17,17,2,44,43,"P",0,1],[480,25,12,12,17,17,13,68,79,"P",0,1],[481,26,40,39,17,17,2,44,43,"P",0,1],[367,26,36,35,17,17,43,40,39,"P",0,1],[134,27,5,5,17,17,2,5,60,"P",0,1],[594,27,52,49,17,17,16,72,86,"P",0,1],[595,28,62,59,17,17,15,1,85,"P",0,1],[371,29,40,39,17,17,1,44,43,"P",0,1],[484,29,12,12,17,17,2,68,79,"P",0,1],[372,30,34,33,17,17,9,38,36,"P",0,1],[596,30,2,2,17,17,9,2,2,"P",0,1],[72,0,17,17,9,9,44,17,16,"P",0,1],[374,0,61,58,9,9,62,51,87,"P",0,1],[541,1,50,14,9,9,1,54,59,"P",0,1],[75,1,21,21,9,9,2,21,70,"P",0,1],[400,4,61,58,9,9,64,51,87,"P",0,1],[460,5,21,21,9,9,7,21,70,"P",0,1],[331,5,48,46,9,9,15,73,88,"P",0,1],[152,6,49,47,9,9,1,69,81,"P",0,1],[461,6,39,38,9,9,9,43,42,"P",0,1],[597,7,48,46,9,9,100,73,88,"P",0,1],[92,8,16,16,9,9,2,10,19,"P",0,1],[598,8,61,58,9,9,3,51,87,"P",0,1],[339,31,49,47,9,9,101,69,81,"P",0,1],[162,9,48,46,9,9,102,73,88,"P",0,1],[496,9,16,16,9,9,0,10,19,"P",0,1],[26,10,49,47,9,9,103,69,81,"P",0,1],[467,10,39,38,9,9,21,43,42,"P",0,1],[164,10,19,19,9,9,10,19,18,"P",0,1],[167,11,21,21,9,9,1,21,70,"P",0,1],[497,12,50,14,9,9,35,54,59,"P",0,1],[437,12,16,16,9,9,2,10,19,"P",0,1],[551,12,39,38,9,9,11,43,42,"P",0,1],[469,13,50,14,9,9,9,54,59,"P",0,1],[34,14,50,14,9,9,33,54,59,"P",0,1],[599,15,16,16,9,9,52,10,19,"P",0,1],[472,15,17,17,9,9,37,17,16,"P",0,1],[600,15,61,58,9,9,59,51,87,"P",0,1],[113,16,21,21,9,9,2,21,70,"P",0,1],[522,16,49,47,9,9,41,69,81,"P",0,1],[116,17,61,58,9,9,6,51,87,"P",0,1],[38,18,19,19,9,9,16,19,18,"P",0,1],[557,19,39,38,9,9,10,43,42,"P",0,1],[444,20,61,58,9,9,83,51,87,"P",0,1],[448,22,16,16,9,9,2,10,19,"P",0,1],[449,22,48,46,9,9,16,73,88,"P",0,1],[364,23,49,47,9,9,104,69,81,"P",0,1],[247,24,17,17,9,9,96,17,16,"P",0,1],[358,25,21,21,9,9,15,21,70,"P",0,1],[410,26,19,19,9,9,9,19,18,"P",0,1],[455,26,48,46,9,9,10,73,88,"P",0,1],[601,27,48,46,9,9,59,73,88,"P",0,1],[414,27,39,38,9,9,1,43,42,"P",0,1],[64,28,50,14,9,9,9,54,59,"P",0,1],[318,29,17,17,9,9,1,17,16,"P",0,1],[602,29,50,14,9,9,59,54,59,"P",0,1],[65,29,19,19,9,9,1,19,18,"P",0,1],[485,30,19,19,9,9,9,19,18,"P",0,1],[141,30,49,47,9,9,2,69,81,"P",0,1],[596,30,39,38,9,9,1,43,42,"P",0,1],[205,0,54,51,7,7,105,56,62,"P",0,1],[264,1,25,24,7,7,75,26,24,"P",0,1],[583,2,27,26,7,7,1,32,89,"P",0,1],[378,3,27,26,7,7,1,32,89,"P",0,1],[381,5,62,59,7,7,47,1,85,"P",0,1],[151,5,44,43,7,7,1,48,49,"P",0,1],[603,6,27,26,7,7,20,32,89,"P",0,1],[271,6,13,13,7,7,2,14,12,"P",0,1],[336,7,62,59,7,7,1,1,85,"P",0,1],[388,7,51,48,7,7,2,71,83,"P",0,1],[390,8,51,48,7,7,1,71,83,"P",0,1],[494,8,44,43,7,7,29,48,49,"P",0,1],[464,8,13,13,7,7,46,14,12,"P",0,1],[338,31,56,53,7,7,1,35,64,"P",0,1],[546,31,38,37,7,7,50,42,41,"P",0,1],[466,9,56,53,7,7,1,35,64,"P",0,1],[98,9,25,24,7,7,50,26,24,"P",0,1],[99,10,54,51,7,7,1,56,62,"P",0,1],[574,10,38,37,7,7,26,42,41,"P",0,1],[166,10,44,43,7,7,2,48,49,"P",0,1],[284,11,25,24,7,7,13,26,24,"P",0,1],[168,12,51,48,7,7,2,71,83,"P",0,1],[498,13,56,53,7,7,2,35,64,"P",0,1],[518,13,38,37,7,7,2,42,41,"P",0,1],[292,13,13,13,7,7,47,14,12,"P",0,1],[348,14,44,43,7,7,33,48,49,"P",0,1],[604,14,13,13,7,7,106,14,12,"P",0,1],[294,15,44,43,7,7,20,48,49,"P",0,1],[36,16,51,48,7,7,30,71,83,"P",0,1],[441,18,62,59,7,7,2,1,85,"P",0,1],[40,18,38,37,7,7,2,42,41,"P",0,1],[356,19,54,51,7,7,23,56,62,"P",0,1],[122,20,25,24,7,7,1,25,23,"P",0,1],[590,21,51,48,7,7,13,71,83,"P",0,1],[187,22,27,26,7,7,2,32,89,"P",0,1],[605,24,13,13,7,7,9,14,12,"P",0,1],[127,24,62,59,7,7,8,1,85,"P",0,1],[504,24,27,26,7,7,8,32,89,"P",0,1],[249,25,62,59,7,7,2,1,85,"P",0,1],[251,26,25,24,7,7,20,26,24,"P",0,1],[561,26,56,53,7,7,1,35,64,"P",0,1],[412,27,54,51,7,7,16,56,62,"P",0,1],[606,27,44,43,7,7,96,48,49,"P",0,1],[413,27,51,48,7,7,58,71,83,"P",0,1],[509,28,54,51,7,7,47,56,62,"P",0,1],[535,28,38,37,7,7,47,42,41,"P",0,1],[369,28,56,53,7,7,47,35,64,"P",0,1],[607,29,13,13,7,7,2,14,12,"P",0,1],[319,29,25,24,7,7,64,26,24,"P",0,1],[418,29,54,51,7,7,9,56,62,"P",0,1],[320,30,56,53,7,7,1,35,64,"P",0,1],[511,30,27,26,7,7,1,32,89,"P",0,1],[0,0,63,60,12,12,1,72,90,"P",0,1],[323,0,64,61,12,12,20,74,91,"P",0,1],[487,1,2,2,12,12,1,2,2,"P",0,1],[145,1,59,56,12,12,2,7,5,"S",1,1],[608,1,10,10,12,12,2,16,34,"P",0,1],[78,2,10,10,12,12,1,16,34,"P",0,1],[563,4,56,53,12,12,49,19,68,"P",0,1],[209,4,59,56,12,12,51,7,5,"S",1,1],[542,4,63,60,12,12,13,72,90,"P",0,1],[210,4,10,10,12,12,71,16,34,"P",0,1],[10,5,56,53,12,12,1,19,68,"P",0,1],[609,5,16,16,12,12,1,10,5,"S",1,1],[544,6,64,61,12,12,7,74,91,"P",0,1],[154,7,59,56,12,12,1,7,5,"S",1,1],[391,31,27,26,12,12,107,32,89,"P",0,1],[158,31,59,56,12,12,51,7,5,"S",1,1],[218,31,32,31,12,12,42,35,32,"P",0,1],[23,9,56,53,12,12,40,19,68,"P",0,1],[610,9,27,26,12,12,75,32,89,"P",0,1],[515,9,59,56,12,12,48,7,5,"S",1,1],[222,10,32,31,12,12,9,35,32,"P",0,1],[434,10,64,61,12,12,59,74,91,"P",0,1],[282,10,56,53,12,12,8,19,68,"P",0,1],[285,11,56,53,12,12,1,19,68,"P",0,1],[289,13,2,2,12,12,75,2,2,"P",0,1],[349,15,63,60,12,12,11,72,90,"P",0,1],[438,15,16,16,12,12,1,10,5,"S",1,1],[600,15,27,26,12,12,15,32,89,"P",0,1],[178,16,27,26,12,12,54,32,89,"P",0,1],[353,18,32,31,12,12,47,35,32,"P",0,1],[41,19,56,53,12,12,61,19,68,"P",0,1],[442,19,32,31,12,12,1,35,32,"P",0,1],[301,20,27,26,12,12,3,32,89,"P",0,1],[611,20,64,61,12,12,10,74,91,"P",0,1],[447,21,32,31,12,12,84,35,32,"P",0,1],[123,22,27,26,12,12,41,32,89,"P",0,1],[612,22,16,16,12,12,1,10,5,"S",1,1],[363,23,63,60,12,12,26,72,90,"P",0,1],[52,23,16,16,12,12,2,10,5,"S",1,1],[365,24,63,60,12,12,9,72,90,"P",0,1],[593,25,2,2,12,12,13,2,2,"P",0,1],[248,25,59,56,12,12,30,7,5,"S",1,1],[613,26,64,61,12,12,59,74,91,"P",0,1],[614,26,2,2,12,12,51,2,2,"P",0,1],[133,26,10,10,12,12,61,16,34,"P",0,1],[159,27,2,2,12,12,37,2,2,"P",0,1],[252,27,10,10,12,12,10,16,34,"P",0,1],[315,28,16,16,12,12,2,10,5,"S",1,1],[370,28,10,10,12,12,2,16,34,"P",0,1],[259,30,2,2,12,12,72,2,2,"P",0,1],[421,0,28,27,8,8,1,30,28,"P",0,1],[582,1,43,42,8,8,51,75,92,"P",0,1],[7,4,28,27,8,8,2,30,28,"P",0,1],[459,4,31,30,8,8,6,34,31,"P",0,1],[400,4,21,21,8,8,64,27,25,"P",0,1],[380,5,18,18,8,8,103,18,17,"P",0,1],[603,6,35,34,8,8,20,65,75,"P",0,1],[428,6,53,50,8,8,8,55,61,"P",0,1],[514,6,39,38,8,8,1,43,42,"P",0,1],[597,7,42,41,8,8,100,24,47,"P",0,1],[17,7,28,27,8,8,1,30,28,"P",0,1],[463,7,41,40,8,8,20,45,45,"P",0,1],[598,8,21,21,8,8,2,27,25,"P",0,1],[219,31,43,42,8,8,72,75,92,"P",0,1],[615,9,41,40,8,8,10,45,45,"P",0,1],[616,9,43,42,8,8,2,75,92,"P",0,1],[548,9,21,21,8,8,61,27,25,"P",0,1],[432,10,28,27,8,8,42,30,28,"P",0,1],[517,10,18,18,8,8,9,18,17,"P",0,1],[283,11,39,38,8,8,33,43,42,"P",0,1],[550,11,21,21,8,8,1,27,25,"P",0,1],[360,12,31,30,8,8,2,34,31,"P",0,1],[617,13,41,40,8,8,30,45,45,"P",0,1],[33,13,42,41,8,8,101,24,47,"P",0,1],[350,15,18,18,8,8,2,18,17,"P",0,1],[554,15,39,38,8,8,9,43,42,"P",0,1],[524,20,21,21,8,8,41,27,25,"P",0,1],[618,20,43,42,8,8,1,75,92,"P",0,1],[445,20,18,18,8,8,9,18,17,"P",0,1],[526,20,42,41,8,8,12,24,47,"P",0,1],[45,21,42,41,8,8,84,24,47,"P",0,1],[591,22,35,34,8,8,1,65,75,"P",0,1],[619,22,41,40,8,8,29,45,45,"P",0,1],[579,23,35,34,8,8,26,65,75,"P",0,1],[305,23,42,41,8,8,51,24,47,"P",0,1],[53,24,31,30,8,8,2,34,31,"P",0,1],[54,24,18,18,8,8,8,18,17,"P",0,1],[450,24,39,38,8,8,1,43,42,"P",0,1],[558,25,39,38,8,8,8,43,42,"P",0,1],[613,26,42,41,8,8,39,24,47,"P",0,1],[58,26,43,42,8,8,10,75,92,"P",0,1],[508,27,21,21,8,8,11,27,25,"P",0,1],[581,27,35,34,8,8,47,65,75,"P",0,1],[534,28,41,40,8,8,1,45,45,"P",0,1],[63,28,31,30,8,8,47,34,31,"P",0,1],[620,29,35,34,8,8,2,65,75,"P",0,1],[621,29,41,40,8,8,2,45,45,"P",0,1],[257,30,43,42,8,8,9,75,92,"P",0,1],[70,30,18,18,8,8,17,18,17,"P",0,1],[622,0,38,37,18,18,5,42,41,"P",0,1],[488,1,59,56,18,18,1,7,5,"S",1,1],[623,1,5,5,18,18,1,5,5,"S",5,1],[3,1,21,21,18,18,1,27,25,"P",0,1],[6,3,43,42,18,18,1,75,92,"P",0,1],[8,4,18,18,18,18,1,62,93,"P",0,1],[266,4,19,19,18,18,49,46,46,"P",0,1],[564,4,38,37,18,18,2,42,41,"P",0,1],[609,5,1,1,18,18,75,38,69,"P",0,1],[86,6,43,42,18,18,2,75,92,"P",0,1],[272,6,5,5,18,18,2,5,5,"S",5,1],[273,6,42,41,18,18,35,24,47,"P",0,1],[566,6,25,24,18,18,108,25,23,"P",0,1],[387,7,25,24,18,18,29,25,23,"P",0,1],[16,7,5,5,18,18,36,5,5,"S",5,1],[567,7,1,1,18,18,27,38,69,"P",0,1],[21,8,43,42,18,18,2,75,92,"P",0,1],[569,31,32,31,18,18,1,35,32,"P",0,1],[570,31,5,5,18,18,57,5,5,"S",5,1],[340,31,21,21,18,18,2,27,25,"P",0,1],[161,9,18,18,18,18,74,62,93,"P",0,1],[516,9,19,19,18,18,2,46,46,"P",0,1],[25,9,38,37,18,18,11,42,41,"P",0,1],[256,10,43,42,18,18,47,75,92,"P",0,1],[224,11,38,37,18,18,34,42,41,"P",0,1],[103,11,34,33,18,18,33,70,82,"P",0,1],[396,12,25,24,18,18,10,25,23,"P",0,1],[30,12,43,42,18,18,2,75,92,"P",0,1],[624,12,42,41,18,18,15,24,47,"P",0,1],[617,13,25,24,18,18,1,25,23,"P",0,1],[587,13,19,19,18,18,1,46,46,"P",0,1],[519,14,18,18,18,18,33,62,93,"P",0,1],[175,15,5,5,18,18,15,5,5,"S",5,1],[625,15,32,31,18,18,15,35,32,"P",0,1],[351,16,42,41,18,18,10,24,47,"P",0,1],[179,16,1,1,18,18,2,38,69,"P",0,1],[180,18,21,21,18,18,1,27,25,"P",0,1],[238,18,38,37,18,18,1,42,41,"P",0,1],[239,19,21,21,18,18,1,27,25,"P",0,1],[577,19,32,31,18,18,47,35,32,"P",0,1],[44,20,43,42,18,18,27,75,92,"P",0,1],[240,20,18,18,18,18,2,62,93,"P",0,1],[46,22,32,31,18,18,10,35,32,"P",0,1],[612,22,1,1,18,18,30,38,69,"P",0,1],[50,23,34,33,18,18,109,70,82,"P",0,1],[527,23,59,56,18,18,1,7,5,"S",1,1],[528,23,18,18,18,18,80,62,93,"P",0,1],[530,24,42,41,18,18,107,24,47,"P",0,1],[505,24,32,31,18,18,28,35,32,"P",0,1],[531,24,59,56,18,18,1,7,5,"S",1,1],[580,25,1,1,18,18,29,38,69,"P",0,1],[196,25,32,31,18,18,1,35,32,"P",0,1],[453,26,59,56,18,18,2,7,5,"S",1,1],[614,26,19,19,18,18,7,46,46,"P",0,1],[312,27,21,21,18,18,1,27,25,"P",0,1],[533,27,38,37,18,18,1,42,41,"P",0,1],[456,27,25,24,18,18,1,25,23,"P",0,1],[316,28,19,19,18,18,2,46,46,"P",0,1],[137,28,59,56,18,18,2,7,5,"S",1,1],[457,28,5,5,18,18,28,5,5,"S",5,1],[620,29,1,1,18,18,2,38,69,"P",0,1],[138,29,21,21,18,18,9,27,25,"P",0,1],[621,29,25,24,18,18,2,25,23,"P",0,1],[69,30,19,19,18,18,27,46,46,"P",0,1],[142,30,18,18,18,18,35,62,93,"P",0,1]],"S":[[15,15,5,5,5,6,0,0,0],[15,15,13,13,5,6,0,0,0],[15,15,3,3,59,6,0,1,0],[15,15,10,10,59,4,0,1,0],[49,47,15,15,2,6,0,2,0],[49,47,16,16,2,6,0,3,0],[49,47,2,2,69,5,0,4,0],[49,47,9,9,69,6,0,1,0],[2,2,1,1,2,5,0,4,0],[2,2,3,3,2,6,0,2,0],[2,2,17,17,2,6,0,2,0],[2,2,12,12,2,6,0,5,0],[0,0,1,1,0,4,0,1,0],[0,0,0,0,0,3,0,4,0],[0,0,4,4,0,5,0,1,0],[44,43,13,13,48,5,0,6,0],[44,43,2,2,48,3,0,3,0],[44,43,7,7,48,6,0,7,0],[3,3,1,1,3,5,0,8,0],[3,3,15,15,13,6,1,9,2],[3,3,10,10,3,6,0,10,0],[3,3,14,14,13,6,1,9,2],[8,8,1,1,8,6,0,4,0],[8,8,5,5,8,6,0,4,0],[8,8,13,13,8,6,0,1,0],[8,8,3,3,8,6,0,11,0],[10,10,1,1,10,3,0,5,0],[10,10,0,0,10,6,0,12,0],[10,10,10,10,10,3,0,4,0],[10,10,10,10,16,1,0,13,0],[10,10,12,12,16,6,0,14,0],[35,34,4,4,3,5,0,15,0],[35,34,16,16,3,4,0,10,0],[35,34,11,11,65,6,0,3,0],[35,34,6,6,3,5,0,16,0],[35,34,8,8,65,5,0,17,0],[16,16,5,5,10,6,0,12,0],[16,16,6,6,16,6,0,14,0],[16,16,9,9,10,5,0,1,0],[16,16,12,12,10,5,1,18,1],[9,9,1,1,9,6,0,1,0],[9,9,1,1,13,4,1,9,2],[9,9,0,0,13,6,1,9,2],[9,9,2,2,9,3,0,1,0],[31,30,0,0,34,6,0,5,0],[31,30,3,3,34,1,0,1,0],[31,30,10,10,34,4,0,1,0],[31,30,16,16,34,5,0,4,0],[31,30,11,11,34,5,0,4,0],[31,30,8,8,34,4,0,19,0],[54,51,3,3,58,4,0,20,0],[54,51,3,3,56,3,0,21,0],[54,51,16,16,58,6,0,20,0],[54,51,7,7,56,6,0,5,0],[25,24,5,5,26,6,0,22,0],[25,24,10,10,26,5,0,4,0],[25,24,7,7,26,5,0,5,0],[25,24,7,7,25,1,0,1,0],[25,24,18,18,25,6,0,4,0],[23,7,5,5,23,3,0,12,0],[23,7,0,0,23,6,0,12,0],[23,7,4,4,39,6,0,4,0],[23,7,16,16,23,6,0,23,0],[23,7,14,14,39,6,0,7,0],[7,7,1,1,7,5,0,1,0],[7,7,15,15,7,3,0,4,0],[7,7,3,3,7,5,0,1,0],[7,7,16,16,7,6,0,24,0],[7,7,6,6,7,6,0,1,0],[47,45,13,13,23,6,0,12,0],[47,45,11,11,23,6,1,25,7],[47,45,2,2,23,6,0,12,0],[47,45,6,6,23,6,0,12,0],[59,56,11,11,7,6,0,1,0],[59,56,2,2,7,6,1,18,1],[59,56,12,12,7,6,1,18,1],[59,56,18,18,7,5,1,18,1],[38,37,4,4,42,6,0,17,0],[38,37,15,15,42,6,0,21,0],[38,37,7,7,42,5,0,1,0],[38,37,18,18,42,6,0,1,0],[43,42,13,13,47,4,0,22,0],[43,42,11,11,47,6,0,22,0],[43,42,8,8,75,6,0,22,0],[43,42,18,18,75,6,0,22,0],[5,5,1,1,5,6,1,18,1],[5,5,15,15,5,6,0,1,0],[5,5,2,2,5,6,0,26,0],[5,5,17,17,5,6,0,26,0],[5,5,18,18,5,6,1,27,5],[19,19,5,5,19,6,0,0,0],[19,19,0,0,19,6,1,18,1],[19,19,13,13,46,6,0,5,0],[19,19,9,9,19,5,0,12,0],[19,19,18,18,46,6,0,28,0],[32,31,0,0,35,6,0,5,0],[32,31,10,10,35,6,0,29,0],[32,31,12,12,35,5,0,29,0],[32,31,18,18,35,6,0,29,0],[37,36,4,4,41,6,0,11,0],[37,36,15,15,41,5,0,4,0],[37,36,3,3,41,6,0,1,0],[37,36,6,6,41,5,0,1,0],[56,53,3,3,35,4,0,29,0],[56,53,10,10,19,5,0,22,0],[56,53,16,16,19,6,0,22,0],[56,53,14,14,35,6,0,12,0],[56,53,7,7,35,6,0,23,0],[56,53,12,12,19,6,0,5,0],[18,18,5,5,18,6,0,30,0],[18,18,16,16,62,6,1,27,5],[18,18,8,8,18,6,0,1,0],[18,18,18,18,62,6,0,4,0],[34,33,4,4,38,5,0,5,0],[34,33,2,2,70,6,0,31,0],[34,33,17,17,38,3,0,2,0],[34,33,17,17,70,4,0,19,0],[34,33,18,18,70,2,0,4,0],[51,48,15,15,53,6,0,11,0],[51,48,11,11,53,4,0,4,0],[51,48,6,6,71,6,0,5,0],[51,48,7,7,71,6,0,32,0],[27,26,0,0,29,6,0,4,0],[27,26,0,0,32,1,1,4,2],[27,26,3,3,29,6,0,4,0],[27,26,7,7,32,6,0,1,0],[27,26,12,12,32,6,0,1,0],[11,11,1,1,11,6,1,9,2],[57,54,16,16,61,6,0,11,0],[58,55,11,11,61,4,0,11,0],[60,57,14,14,66,6,0,4,0],[63,60,12,12,72,5,0,1,0],[52,49,15,15,55,6,1,18,1],[52,49,17,17,72,6,0,33,0],[48,46,13,13,32,3,0,1,0],[48,46,10,10,32,4,0,1,0],[48,46,9,9,73,6,0,1,0],[41,40,13,13,45,6,0,34,0],[41,40,11,11,45,4,0,35,0],[41,40,8,8,45,6,0,34,0],[13,13,5,5,14,4,0,17,0],[13,13,6,6,14,6,0,4,0],[13,13,7,7,14,6,0,32,0],[64,61,12,12,74,5,0,1,0],[45,44,13,13,50,6,0,5,0],[45,44,14,14,50,6,0,36,0],[53,50,3,3,55,5,0,37,0],[53,50,11,11,55,6,1,27,5],[53,50,2,2,55,3,0,38,0],[53,50,8,8,55,1,0,1,0],[17,17,5,5,17,6,0,39,0],[17,17,11,11,63,4,1,40,6],[17,17,14,14,63,5,0,1,0],[17,17,9,9,17,4,0,41,0],[29,28,0,0,31,4,0,42,0],[29,28,11,11,64,5,0,21,0],[46,28,13,13,51,6,0,5,0],[46,28,16,16,51,6,0,1,0],[6,6,1,1,6,6,0,43,0],[6,6,6,6,37,6,0,11,0],[14,14,5,5,15,5,0,4,0],[14,14,13,13,15,6,0,1,0],[14,14,13,13,49,5,0,5,0],[14,14,3,3,49,6,0,1,0],[26,25,0,0,28,6,0,4,0],[26,25,4,4,37,6,0,5,0],[50,14,15,15,54,5,0,1,0],[50,14,15,15,28,6,0,7,0],[50,14,2,2,28,6,0,12,0],[50,14,9,9,54,6,0,44,0],[61,58,2,2,54,6,0,44,0],[61,58,9,9,51,6,0,4,0],[22,22,5,5,22,2,1,5,3],[22,22,16,16,22,5,1,45,3],[22,22,6,6,22,5,1,12,3],[1,1,1,1,1,5,0,33,0],[1,1,4,4,1,3,0,19,0],[1,1,10,10,38,3,0,31,0],[1,1,18,18,38,6,0,2,0],[4,4,1,1,4,6,0,33,0],[4,4,3,3,4,4,0,20,0],[4,4,11,11,22,4,1,5,3],[20,20,5,5,20,6,0,21,0],[20,20,10,10,60,6,0,4,0],[33,32,0,0,36,5,0,4,0],[33,32,15,15,36,6,0,42,0],[42,41,13,13,24,4,0,22,0],[42,41,17,17,24,3,0,1,0],[42,41,8,8,24,6,0,17,0],[42,41,18,18,24,4,0,17,0],[55,52,3,3,57,6,0,10,0],[55,52,16,16,57,3,0,1,0],[55,52,11,11,57,4,0,1,0],[55,52,14,14,57,6,0,1,0],[24,23,5,5,24,6,0,17,0],[24,23,6,6,24,6,0,1,0],[62,59,17,17,1,4,0,5,0],[62,59,7,7,1,5,0,2,0],[40,39,4,4,44,5,0,4,0],[40,39,10,10,44,6,0,4,0],[40,39,14,14,67,6,0,12,0],[40,39,17,17,44,6,0,1,0],[28,27,0,0,30,5,0,5,0],[28,27,15,15,30,5,0,22,0],[28,27,10,10,30,4,0,22,0],[28,27,8,8,30,4,0,19,0],[12,12,1,1,12,5,0,46,0],[12,12,4,4,12,5,1,20,4],[12,12,14,14,68,5,0,44,0],[12,12,17,17,68,6,0,11,0],[30,29,0,0,33,5,0,1,0],[30,29,13,13,21,5,0,35,0],[30,29,3,3,21,6,0,1,0],[30,29,10,10,21,2,0,1,0],[30,29,10,10,33,6,0,1,0],[39,38,4,4,43,5,0,1,0],[39,38,10,10,43,5,0,3,0],[39,38,2,2,43,4,0,42,0],[39,38,9,9,43,6,0,37,0],[39,38,8,8,43,5,0,37,0],[36,35,4,4,40,6,0,1,0],[36,35,15,15,52,4,0,47,0],[36,35,17,17,40,6,0,1,0],[21,21,5,5,21,4,1,18,1],[21,21,16,16,21,5,0,1,0],[21,21,9,9,21,5,0,4,0],[21,21,8,8,27,6,0,43,0],[21,21,18,18,27,6,0,48,0]],"TM":["ARICA","BUIN ERRAZURIZ","BUIN M. RODRIGUEZ","CAMINO MELIPILLA","CHILLAN","COPIAPO","CURICO NORTE","DEPARTAMENTAL","EL BELLOTO","HUALPEN","LA SERENA","LAS CONDES","LAS REJAS","LINARES","LOS ALAMOS COLINA","LOS ANGELES ALCAZAR","MELIPILLA","OSORNO","OVALLE","PEÑAFLOR","PUERTO MONTT","RANCAGUA","SAN PEDRO DE LA PAZ","TALCA","TALCAHUANO","TEMUCO"],"OL":["","Día libre · en revisión para reprogramar","Lic. médica · en revisión para reprogram","Renuncia · en revisión para reprogramar","En revisión para reprogramar","Vacaciones · en revisión para reprograma","Día compensado · en revisión para reprog","Cambio de turno · en revisión para repro"],"RFD":["06/07/2026","","07/07/2026","08/07/2026","09/07/2026","10/07/2026"]}`;
+let D = {
+  N: [],
+  T: [],
+  C: [],
+  P: [],
+  FI: [],
+  FD: [],
+  TR: [],
+  MO: [],
+  L: [],
+  R: [],
+  S: []
+};
+try {
+  D = JSON.parse(_raw);
+} catch (e) {}
+const SB_URL = "https://fsvnwvbknrvyeqmsdemc.supabase.co";
+const SB_KEY = "sb_publishable_57XFCkf1kLIvKTjH-3Nkqg_L7JBl0Yw";
+
+// Supabase helpers
+async function sbGet(table) {
+  try {
+    const r = await fetch(`${SB_URL}/rest/v1/${table}?select=*`, {
+      headers: {
+        'apikey': SB_KEY,
+        'Authorization': `Bearer ${SB_KEY}`
+      }
+    });
+    return r.ok ? await r.json() : [];
+  } catch (e) {
+    return [];
+  }
+}
+async function sbUpsert(table, data) {
+  try {
+    const res = await fetch(`${SB_URL}/rest/v1/${table}`, {
+      method: 'POST',
+      headers: {
+        'apikey': SB_KEY,
+        'Authorization': `Bearer ${SB_KEY}`,
+        'Content-Type': 'application/json',
+        'Prefer': 'return=minimal,resolution=merge-duplicates'
+      },
+      body: JSON.stringify(data)
+    });
+    return res;
+  } catch (e) {
+    console.error('sbUpsert error:', e);
+  }
+}
+const FORMS = "https://forms.office.com/Pages/ResponsePage.aspx?id=jAAvhNBmykquEJ4TmoyPF0L-w-4p7_5HviMaaQTWwi1UMUpHNTg3UlBDTFMzWEFaWFcyTk4wQlhKTC4u";
+const PV = "CP2026",
+  PE = "FORM2026";
+const EL = {
+  C: "✓ Confirmada",
+  S: "⊘ Suspendida",
+  R: "↻ Reprogramada",
+  K: "👤 Cambio monitor",
+  P: "· Pendiente",
+  RP: "✓ Confirmada",
+  A: "✅ Asistió",
+  N: "❌ No asistió"
+};
+const PILL_STYLE = {
+  C: "#E6F4EA|#2E7D32",
+  S: "#FBEAE8|#B3261E",
+  R: "#FEF0E7|#C2691D",
+  K: "#EFF6FF|#1a56db",
+  P: "#F3F5F8|#6B7686",
+  RP: "#E6F4EA|#2E7D32",
+  A: "#1B5E20|#fff",
+  N: "#B71C1C|#fff"
+};
+const MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
+const N = "#041e42",
+  G = "#ffb81c",
+  BG = "#F4F5F7",
+  LN = "#E4E7EC",
+  INK = "#1A2332",
+  SF = "#6B7686";
+const FAM = "-apple-system,'Segoe UI',Arial,sans-serif";
+function chileNow() {
+  return new Date().toLocaleString("es-CL", {
+    timeZone: "America/Santiago",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit"
+  });
+}
+function Pill({
+  v,
+  onChange
+}) {
+  const parts = (PILL_STYLE[v] || PILL_STYLE.P).split("|");
+  const bg = parts[0],
+    col = parts[1];
+  const s = {
+    background: bg,
+    color: col,
+    border: "none",
+    borderRadius: 20,
+    padding: "3px 10px",
+    fontSize: 11.5,
+    fontWeight: 700,
+    fontFamily: FAM,
+    cursor: onChange ? "pointer" : "default",
+    appearance: "none",
+    WebkitAppearance: "none"
+  };
+  if (!onChange) return /*#__PURE__*/React.createElement("span", {
+    style: s
+  }, EL[v] || v);
+  return /*#__PURE__*/React.createElement("select", {
+    style: s,
+    value: v || "C",
+    onChange: e => onChange(e.target.value)
+  }, Object.entries(EL).map(([k, l]) => /*#__PURE__*/React.createElement("option", {
+    key: k,
+    value: k
+  }, l)));
+}
+function EditMonModal({
+  mon,
+  onClose,
+  onSave,
+  mo,
+  D
+}) {
+  const [nf, setNf] = useState(D.FI[mon.fi] || "");
+  const [nm, setNm] = useState(mon.mi);
+  // Link del nuevo monitor (para mostrar/guardar)
+  // Buscar link actual del monitor (original o ya overrideado)
+  const _moEntry = mo[mon.origMi + "|" + mon.origFi + "|" + mon.ci];
+  const existingLk = _moEntry && _moEntry.lk || "";
+  const initLink = existingLk || (() => {
+    const row = D.R.find(r => r && r[7] === mon.mi && r[4] === mon.origFi && r[2] === mon.ci && D.L[r[8]] && D.L[r[8]].startsWith("http"));
+    return row ? D.L[row[8]] : "";
+  })();
+  const [nlink, setNlink] = useState(initLink);
+  const inp = {
+    width: "100%",
+    border: "1.5px solid " + N,
+    borderRadius: 7,
+    padding: "8px 11px",
+    fontSize: 13,
+    fontFamily: FAM,
+    boxSizing: "border-box"
+  };
+  return /*#__PURE__*/React.createElement("div", {
+    onClick: e => {
+      if (e.target === e.currentTarget) onClose();
+    },
+    style: {
+      position: "fixed",
+      inset: 0,
+      background: "rgba(4,30,66,.55)",
+      zIndex: 300,
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      padding: 16
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: "#fff",
+      borderRadius: 14,
+      width: "100%",
+      maxWidth: 420,
+      boxShadow: "0 24px 60px rgba(0,0,0,.3)"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: N,
+      color: "#fff",
+      padding: "15px 20px",
+      borderRadius: "14px 14px 0 0",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "space-between"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontWeight: 700,
+      fontSize: 14
+    }
+  }, "Editar sesión"), /*#__PURE__*/React.createElement("button", {
+    onClick: onClose,
+    style: {
+      background: "rgba(255,255,255,.15)",
+      color: "#fff",
+      border: "none",
+      borderRadius: 6,
+      padding: "3px 10px",
+      fontSize: 18,
+      cursor: "pointer",
+      lineHeight: 1
+    }
+  }, "×")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: 20
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: BG,
+      borderRadius: 8,
+      padding: "10px 14px",
+      marginBottom: 16,
+      fontSize: 12.5,
+      color: SF
+    }
+  }, /*#__PURE__*/React.createElement("strong", {
+    style: {
+      color: INK
+    }
+  }, D.MO[mon.mi] ? D.MO[mon.mi][0] : ""), /*#__PURE__*/React.createElement("br", null), D.C[mon.ci] || "", " · ", D.P[mon.pi] || "", /*#__PURE__*/React.createElement("br", null), "Fecha actual: ", /*#__PURE__*/React.createElement("strong", null, D.FD[mon.fi] || "")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginBottom: 14
+    }
+  }, /*#__PURE__*/React.createElement("label", {
+    style: {
+      display: "block",
+      fontSize: 11,
+      fontWeight: 700,
+      color: SF,
+      textTransform: "uppercase",
+      letterSpacing: ".04em",
+      marginBottom: 5
+    }
+  }, "Nueva fecha"), /*#__PURE__*/React.createElement("input", {
+    type: "date",
+    value: nf,
+    onChange: e => {
+      const newFecha = e.target.value;
+      setNf(newFecha);
+      // Buscar link del monitor actual en la nueva fecha
+      const fiIdx = D.FI.indexOf(newFecha);
+      const row = D.R.find(r => r && r[7] === nm && r[4] === fiIdx && r[2] === mon.ci && r[8] > 0 && D.L[r[8]] && D.L[r[8]].startsWith("http"));
+      if (row) setNlink(D.L[row[8]]);
+    },
+    style: inp
+  }), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: 11,
+      color: SF,
+      marginTop: 4
+    }
+  }, "Se actualizará para el monitor y todos sus alumnos.")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginBottom: 20
+    }
+  }, /*#__PURE__*/React.createElement("label", {
+    style: {
+      display: "block",
+      fontSize: 11,
+      fontWeight: 700,
+      color: SF,
+      textTransform: "uppercase",
+      letterSpacing: ".04em",
+      marginBottom: 5
+    }
+  }, "Cambiar monitor"), /*#__PURE__*/React.createElement("select", {
+    value: nm,
+    onChange: e => {
+      const newMi = Number(e.target.value);
+      setNm(newMi);
+      // Buscar link del nuevo monitor en la fecha seleccionada
+      const fiIdx = D.FI.indexOf(nf);
+      const row = D.R.find(r => r && r[7] === newMi && r[4] === fiIdx && r[2] === mon.ci && r[8] > 0 && D.L[r[8]] && D.L[r[8]].startsWith("http")) || D.R.find(r => r && r[7] === newMi && r[2] === mon.ci && r[8] > 0 && D.L[r[8]] && D.L[r[8]].startsWith("http"));
+      setNlink(row ? D.L[row[8]] : "");
+    },
+    style: {
+      ...inp,
+      border: "1px solid " + LN
+    }
+  }, D.MO.map((m, i) => {
+    const enProyecto = D.S.some(s => s && s[0] === mon.ci && s[4] === i);
+    return enProyecto ? /*#__PURE__*/React.createElement("option", {
+      key: i,
+      value: i
+    }, m[0] || "", " (", m[1] === "E" ? "Especialista" : "Monitor experto", ")") : null;
+  })), /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: 11,
+      color: SF,
+      marginTop: 4
+    }
+  }, "Todos los alumnos de esta sesión quedarán reasignados.")), /*#__PURE__*/React.createElement("button", {
+    onClick: () => onSave(nf, nm, nlink),
+    style: {
+      background: N,
+      color: "#fff",
+      border: "none",
+      borderRadius: 8,
+      padding: "11px 0",
+      width: "100%",
+      fontSize: 14,
+      fontWeight: 800,
+      cursor: "pointer",
+      fontFamily: FAM
+    }
+  }, "Guardar y actualizar alumnos"))));
+}
+function App() {
+  const [screen, setScreen] = useState("lock");
+  const [edit, setEdit] = useState(false);
+  const [pw, setPw] = useState("");
+  const [pwErr, setPwErr] = useState("");
+  const [rol, setRol] = useState("A");
+  const [fecha, setFecha] = useState("");
+  const [tienda, setTienda] = useState("");
+  const [busq, setBusq] = useState("");
+  const [proy, setProy] = useState("");
+  const [exp, setExp] = useState({});
+  const [ov, setOv] = useState({});
+  const [ast, setAst] = useState({});
+  const [showRanking, setShowRanking] = useState(false); // asistencia ✓/✗ por alumno
+  const [mo, setMo] = useState({});
+  const [showM, setShowM] = useState(false);
+  const [mq, setMq] = useState("");
+  const [editMon, setEditMon] = useState(null);
+  const [lastSaved, setLastSaved] = useState("");
+  useEffect(() => {
+    // Cargar estados desde Supabase
+    Promise.all([sbGet('estados'), sbGet('metadata')]).then(([ests, meta]) => {
+      try {
+        const ovObj = {},
+          moObj = {},
+          astObj = {};
+        ests.forEach(e => {
+          if (e.clave.startsWith('mo:')) {
+            try {
+              moObj[e.clave.slice(3)] = JSON.parse(e.valor);
+            } catch (_) {}
+          } else if (e.clave.startsWith('ast:')) {
+            astObj[e.clave.slice(4)] = e.valor;
+          } else {
+            ovObj[e.clave] = e.valor;
+          }
+        });
+        if (Object.keys(ovObj).length > 0) setOv(ovObj);
+        if (Object.keys(moObj).length > 0) setMo(moObj);
+        if (Object.keys(astObj).length > 0) setAst(astObj);
+      } catch (e) {}
+      try {
+        if (meta && meta[0] && meta[0].hora_guardado) setLastSaved(meta[0].hora_guardado);
+      } catch (e) {}
+    }).catch(() => {});
+    const t = new Date().toISOString().slice(0, 10);
+    const f = [...D.FI].filter(x => x >= t).sort();
+    setFecha(f.length ? f[0] : [...D.FI].sort().pop() || "");
+  }, []);
+  function rk(r) {
+    return r[0] + "|" + r[4] + "|" + r[2];
+  }
+  function getLink(r) {
+    if (!r) return "";
+    // Si hay override de monitor, usar su link
+    const k = rk(r);
+    if (mo[k] && mo[k].lk) return mo[k].lk;
+    const moKey = r[7] + "|" + r[4] + "|" + r[2];
+    if (mo[moKey] && mo[moKey].lk) return mo[moKey].lk;
+    return D.L[r[8]] || "";
+  }
+  function getE(r) {
+    if (!r) return "C";
+    const k = rk(r);
+    if (ov[k] !== undefined) return ov[k];
+    if (r[9] === "S") return "S";
+    if (r[9] === "RP") return "RP";
+    // Si el monitor de esta sesión marcó "A", alumno hereda "A" por defecto
+    const monKey = "s:" + r[7] + "|" + r[4] + "|" + r[2];
+    if (ov[monKey] === "A") return "A";
+    return "C";
+  }
+  function getL(r) {
+    if (!r || r[8] === undefined) return "";
+    return D.L[r[8]] || "";
+  }
+  function getEff(r) {
+    if (!r) return {
+      fi: 0,
+      mi: 0
+    };
+    const sk = r[7] + "|" + r[4] + "|" + r[2];
+    const v = mo[sk];
+    if (!v) return {
+      fi: r[4],
+      mi: r[7]
+    };
+    const fi = D.FI.indexOf(v.fi);
+    return {
+      fi: fi >= 0 ? fi : r[4],
+      mi: v.mi !== undefined ? v.mi : r[7]
+    };
+  }
+  function unlock() {
+    if (pw === PE) {
+      setEdit(true);
+      setScreen("main");
+    } else if (pw === PV) {
+      setEdit(false);
+      setScreen("main");
+    } else {
+      setPwErr("Clave incorrecta.");
+      setPw("");
+    }
+  }
+  async function chE(r, val, cascade) {
+    const k = rk(r);
+    const nv = {
+      ...ov,
+      [k]: val
+    };
+    if (cascade) {
+      D.R.forEach(a => {
+        if (a && a[7] === r[7] && a[4] === r[4] && a[2] === r[2]) nv[rk(a)] = val;
+      });
+    }
+    setOv(nv);
+    const hora = chileNow();
+    setLastSaved(hora);
+    try {
+      // Guardar estados en Supabase (uno por uno para mayor compatibilidad)
+      for (const [clave, valor] of Object.entries(nv)) {
+        await sbUpsert('estados', {
+          clave,
+          valor
+        });
+      }
+      await sbUpsert('metadata', {
+        id: 1,
+        hora_guardado: hora
+      });
+    } catch (e) {}
+  }
+  async function saveMonEdit(mon, nf, nm, nlink) {
+    // Siempre usar clave ORIGINAL para que getEff la encuentre
+    const sk = mon.origMi + "|" + mon.origFi + "|" + mon.ci;
+    // nf viene como string ISO "YYYY-MM-DD" desde el input — convertir a índice FI
+    let nfIdx = D.FI.indexOf(nf);
+    if (nfIdx < 0) {
+      D.FI.push(nf);
+      nfIdx = D.FI.length - 1;
+    }
+    // nfdStr: fecha display
+    let nfdStr = D.FD[nfIdx] || nf.split("-").reverse().join("/");
+    if (!D.FD[nfIdx]) {
+      D.FD.push(nfdStr);
+    }
+    const nmo = {
+      ...mo,
+      [sk]: {
+        fi: nfIdx,
+        mi: nm,
+        lk: nlink || ""
+      }
+    };
+    // Limpiar clave efectiva anterior SOLO si es diferente a la original
+    const effKey = mon.mi + "|" + mon.fi + "|" + mon.ci;
+    if (effKey !== sk) delete nmo[effKey];
+    D.R.forEach(a => {
+      if (a && a[7] === mon.origMi && a[4] === mon.origFi && a[2] === mon.ci) {
+        nmo[rk(a)] = {
+          fi: nfIdx,
+          mi: nm,
+          lk: nlink || ""
+        };
+      }
+    });
+    setMo(nmo);
+    setEditMon(null);
+    const hora = chileNow();
+    setLastSaved(hora);
+    try {
+      for (const [clave, v] of Object.entries(nmo)) {
+        await sbUpsert('estados', {
+          clave: 'mo:' + clave,
+          valor: JSON.stringify(v)
+        });
+      }
+      await sbUpsert('metadata', {
+        id: 1,
+        hora_guardado: hora
+      });
+    } catch (e) {}
+  }
+  const TH = {
+    background: "#F8F9FB",
+    color: SF,
+    padding: "9px 12px",
+    textAlign: "left",
+    fontSize: 10.5,
+    textTransform: "uppercase",
+    letterSpacing: ".05em",
+    fontWeight: 700,
+    whiteSpace: "nowrap",
+    borderBottom: "1px solid " + LN
+  };
+  const TD = {
+    padding: "10px 12px",
+    fontSize: 13,
+    verticalAlign: "middle",
+    borderBottom: "1px solid " + LN
+  };
+  const LS = {
+    background: N,
+    color: "#fff",
+    textDecoration: "none",
+    padding: "5px 11px",
+    borderRadius: 6,
+    fontSize: 11.5,
+    fontWeight: 700,
+    whiteSpace: "nowrap",
+    display: "inline-block"
+  };
+
+  // PANTALLA LOCK
+  if (screen === "lock") {
+    return /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: "fixed",
+        inset: 0,
+        background: N,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        fontFamily: FAM
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        background: "#fff",
+        borderRadius: 16,
+        padding: "40px 36px",
+        width: "100%",
+        maxWidth: 360,
+        textAlign: "center"
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 40,
+        marginBottom: 12
+      }
+    }, "🏗️"), /*#__PURE__*/React.createElement("h2", {
+      style: {
+        fontSize: 20,
+        fontWeight: 800,
+        color: N,
+        marginBottom: 6
+      }
+    }, "Malla CP"), /*#__PURE__*/React.createElement("p", {
+      style: {
+        fontSize: 13,
+        color: SF,
+        marginBottom: 24
+      }
+    }, "Ingresa la clave para acceder"), pwErr && /*#__PURE__*/React.createElement("p", {
+      style: {
+        fontSize: 12,
+        color: "#C0392B",
+        marginBottom: 8
+      }
+    }, pwErr), /*#__PURE__*/React.createElement("input", {
+      type: "password",
+      value: pw,
+      onChange: e => setPw(e.target.value),
+      onKeyDown: e => {
+        if (e.key === "Enter") unlock();
+      },
+      placeholder: "••••••••",
+      maxLength: 20,
+      autoComplete: "off",
+      style: {
+        width: "100%",
+        border: "1.5px solid " + LN,
+        borderRadius: 8,
+        padding: "11px 14px",
+        fontSize: 16,
+        fontFamily: FAM,
+        textAlign: "center",
+        letterSpacing: ".15em",
+        marginBottom: 8,
+        boxSizing: "border-box"
+      }
+    }), /*#__PURE__*/React.createElement("button", {
+      onClick: unlock,
+      style: {
+        background: G,
+        color: N,
+        border: "none",
+        borderRadius: 8,
+        padding: "11px 0",
+        width: "100%",
+        fontSize: 14,
+        fontWeight: 800,
+        cursor: "pointer",
+        fontFamily: FAM
+      }
+    }, "Ingresar")));
+  }
+
+  // Filtrar filas
+  const rows = D.R.filter(r => {
+    if (!r) return false;
+    if (proy && D.C[r[2]] !== proy) return false;
+    const eff = getEff(r);
+    const fiStr = D.FI[eff.fi] || D.FI[r[4]] || "";
+    if (fecha && fiStr !== fecha) return false;
+    if (tienda && (D.T[r[1]] || "") !== tienda) return false;
+    if (busq && !(D.N[r[0]] || "").toLowerCase().includes(busq.toLowerCase())) return false;
+    return true;
+  });
+
+  // Agrupar monitores
+  const monMap = {};
+  D.R.forEach(r => {
+    if (!r) return;
+    const eff = getEff(r);
+    const fiEff = eff.fi >= 0 ? eff.fi : r[4];
+    const fiStr = D.FI[fiEff] || "";
+    if (fecha && fiStr !== fecha) return;
+    if (tienda && (D.MO[eff.mi] && D.MO[eff.mi][2] || "") !== tienda) return;
+    const mn = D.MO[eff.mi] && D.MO[eff.mi][0] || "";
+    if (busq && !mn.toLowerCase().includes(busq.toLowerCase())) return;
+    const k = eff.mi + "|" + fiEff + "|" + r[2];
+    if (!monMap[k]) monMap[k] = {
+      mi: eff.mi,
+      fi: fiEff,
+      ci: r[2],
+      pi: r[3],
+      ti: r[6],
+      li: r[8],
+      origMi: r[7],
+      origFi: r[4],
+      alums: []
+    };
+    monMap[k].alums.push(r);
+  });
+  // Enriquecer monMap con turno del monitor desde D.S
+  D.S.forEach(s => {
+    const k = s[4] + "|" + (getEff({
+      7: s[4],
+      4: s[2],
+      2: s[0]
+    }).fi || s[2]) + "|" + s[0];
+    const k2 = s[4] + "|" + s[2] + "|" + s[0];
+    if (monMap[k]) monMap[k].mon_t = s[7];
+    if (monMap[k2]) monMap[k2].mon_t = s[7];
+  });
+  const monRowsAll = Object.values(monMap);
+  const monRows = proy ? monRowsAll.filter(m => D.C[m.ci] === proy) : monRowsAll;
+
+  // Sesiones modal
+  const sesFil = mq ? D.S.filter(s => (D.P[s[1]] || "").toLowerCase().includes(mq.toLowerCase()) || (D.C[s[0]] || "").toLowerCase().includes(mq.toLowerCase())) : [];
+  const sesByP = {};
+  sesFil.forEach(s => {
+    const k = s[0] + "|" + s[1];
+    if (!sesByP[k]) sesByP[k] = {
+      cod: D.C[s[0]] || "",
+      nom: D.P[s[1]] || "",
+      ss: []
+    };
+    sesByP[k].ss.push(s);
+  });
+  async function toggleMonAst(m) {
+    const mkey = m.mi + "|" + m.fi + "|" + m.ci;
+    const cur = ast[mkey];
+    const next = cur === "A" ? "N" : cur === "N" ? "" : "A";
+    const na = {
+      ...ast
+    };
+    if (next === "") delete na[mkey];else na[mkey] = next;
+    // Cascada a alumnos si es A
+    if (next === "A") m.alums.forEach(a => {
+      if (!na[rk(a)]) na[rk(a)] = "A";
+    });
+    setAst(na);
+    const hora = chileNow();
+    setLastSaved(hora);
+    try {
+      if (next === "") await fetch(SB_URL + "/rest/v1/estados?clave=eq.ast:" + encodeURIComponent(mkey), {
+        method: "DELETE",
+        headers: {
+          "apikey": SB_KEY,
+          "Authorization": "Bearer " + SB_KEY
+        }
+      });else await sbUpsert("estados", {
+        clave: "ast:" + mkey,
+        valor: next
+      });
+      if (next === "A") for (const a of m.alums) if (!ast[rk(a)]) await sbUpsert("estados", {
+        clave: "ast:" + rk(a),
+        valor: "A"
+      });
+      await sbUpsert("metadata", {
+        id: 1,
+        hora_guardado: hora
+      });
+    } catch (e) {}
+  }
+  async function toggleAst(r) {
+    const k = rk(r);
+    const cur = ast[k];
+    const next = cur === "A" ? "N" : cur === "N" ? "" : "A";
+    const na = {
+      ...ast
+    };
+    if (next === "") delete na[k];else na[k] = next;
+    setAst(na);
+    const hora = chileNow();
+    setLastSaved(hora);
+    try {
+      if (next === "") {
+        await fetch(SB_URL + "/rest/v1/estados?clave=eq.ast:" + encodeURIComponent(k), {
+          method: "DELETE",
+          headers: {
+            "apikey": SB_KEY,
+            "Authorization": "Bearer " + SB_KEY
+          }
+        });
+      } else {
+        await sbUpsert("estados", {
+          clave: "ast:" + k,
+          valor: next
+        });
+      }
+      await sbUpsert("metadata", {
+        id: 1,
+        hora_guardado: hora
+      });
+    } catch (e) {}
+  }
+  function downloadCSV() {
+    // ID único estable: hash(nombre+tienda) → "CP-XXXX"
+    function cpId(nombre, tienda) {
+      const s = (nombre + tienda).toUpperCase();
+      let h = 0;
+      for (let i = 0; i < s.length; i++) h = Math.imul(31, h) + s.charCodeAt(i) | 0;
+      return "CP-" + (Math.abs(h) % 46656).toString(36).toUpperCase().padStart(4, "0");
+    }
+    const rows = [["ID", "Nombre", "Apellido", "Tienda", "Código", "Proyecto", "Fecha", "Turno", "Monitor", "Estado", "Asistencia", "Link"]];
+    D.R.forEach(r => {
+      if (!r) return;
+      const e = getE(r);
+      const lk = getLink(r);
+      const estadoLabel = {
+        C: "Confirmada",
+        S: "Suspendida",
+        R: "Reprogramada",
+        K: "Cambio monitor",
+        P: "Pendiente",
+        RP: "Reprogramada",
+        A: "Asistió",
+        N: "No asistió"
+      }[e] || e;
+      const nombre = D.N[r[0]] || "";
+      const partes = nombre.split(" ");
+      const pNombre = partes[0] || "";
+      const pApellido = partes.slice(1).join(" ") || "";
+      const tienda = D.T[r[1]] || "";
+      const asistLabel = ast[rk(r)] === "A" ? "Asistió" : ast[rk(r)] === "N" ? "No asistió" : "Sin registrar";
+      rows.push([cpId(nombre, tienda), pNombre, pApellido, tienda, D.C[r[2]] || "", D.P[r[3]] || "", D.FD[r[5]] || "", D.AT[r[6]] || "", D.MO[r[7]] ? D.MO[r[7]][0] : "", estadoLabel, asistLabel, lk]);
+    });
+    const csv = rows.map(r => r.map(v => '"' + String(v || "").replace(/"/g, '""') + '"').join(",")).join("\n");
+    const blob = new Blob(["\uFEFF" + csv], {
+      type: "text/csv;charset=utf-8"
+    });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "Panel_CP_Julio2026_" + new Date().toISOString().slice(0, 10) + ".csv";
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
+  // ── CALCULAR RANKING ──────────────────────────────────────────────────
+  function calcRanking() {
+    const byTienda = {};
+    D.R.forEach(r => {
+      if (!r) return;
+      const t = D.T[r[1]] || "Sin tienda";
+      if (!byTienda[t]) byTienda[t] = {
+        total: 0,
+        asist: 0
+      };
+      byTienda[t].total++;
+      if (ast[rk(r)] === "A") byTienda[t].asist++;
+    });
+    return Object.entries(byTienda).map(([t, v]) => ({
+      tienda: t,
+      pct: v.total > 0 ? Math.round(v.asist / v.total * 100) : 0,
+      asist: v.asist,
+      total: v.total
+    })).sort((a, b) => b.pct - a.pct);
+  }
+  function RankingModal() {
+    const data = calcRanking();
+    const max = data.length > 0 ? Math.max(...data.map(d => d.pct), 1) : 1;
+    const prom = data.length > 0 ? Math.round(data.reduce((s, d) => s + d.pct, 0) / data.length) : 0;
+    const color = p => p >= 75 ? "#2E7D32" : p >= 50 ? "#E65100" : "#B71C1C";
+    const bg = p => p >= 75 ? "#E8F5E9" : p >= 50 ? "#FFF3E0" : "#FFEBEE";
+    return /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: "fixed",
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        background: "rgba(4,30,66,.7)",
+        zIndex: 9999,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: 16
+      },
+      onClick: () => setShowRanking(false)
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        background: "#fff",
+        borderRadius: 16,
+        width: "100%",
+        maxWidth: 700,
+        maxHeight: "90vh",
+        overflowY: "auto",
+        boxShadow: "0 20px 60px rgba(0,0,0,.3)"
+      },
+      onClick: ev => ev.stopPropagation()
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        background: N,
+        color: "#fff",
+        padding: "18px 24px",
+        borderRadius: "16px 16px 0 0",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center"
+      }
+    }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 16,
+        fontWeight: 700
+      }
+    }, "📊 Avance de Cumplimiento"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 11.5,
+        opacity: .65,
+        marginTop: 2
+      }
+    }, "Malla CP · Julio 2026 · Basado en asistencia registrada en el panel")), /*#__PURE__*/React.createElement("button", {
+      onClick: () => setShowRanking(false),
+      style: {
+        background: "rgba(255,255,255,.15)",
+        border: "none",
+        color: "#fff",
+        borderRadius: 8,
+        padding: "6px 12px",
+        fontSize: 16,
+        cursor: "pointer"
+      }
+    }, "✕")), /*#__PURE__*/React.createElement("div", {
+      style: {
+        padding: "20px 24px"
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: "flex",
+        gap: 12,
+        marginBottom: 20,
+        flexWrap: "wrap"
+      }
+    }, [{
+      label: "Promedio general",
+      val: prom + "%",
+      c: color(prom),
+      bg: bg(prom)
+    }, {
+      label: "Tiendas registradas",
+      val: data.length,
+      c: N,
+      bg: "#F0F4FF"
+    }, {
+      label: "Horas planificadas",
+      val: D.R.filter(r => r).length,
+      c: "#555",
+      bg: "#F8F8F8"
+    }, {
+      label: "Horas asistidas",
+      val: Object.values(ast).filter(v => v === "A").length,
+      c: "#2E7D32",
+      bg: "#E8F5E9"
+    }].map(({
+      label,
+      val,
+      c,
+      bg: bg2
+    }) => /*#__PURE__*/React.createElement("div", {
+      key: label,
+      style: {
+        flex: "1 1 120px",
+        background: bg2,
+        borderRadius: 12,
+        padding: "12px 16px",
+        textAlign: "center"
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 22,
+        fontWeight: 800,
+        color: c
+      }
+    }, val), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 11,
+        color: "#666",
+        marginTop: 3
+      }
+    }, label)))), /*#__PURE__*/React.createElement("div", {
+      style: {
+        marginTop: 8
+      }
+    }, data.map(({
+      tienda,
+      pct,
+      asist,
+      total
+    }) => /*#__PURE__*/React.createElement("div", {
+      key: tienda,
+      style: {
+        marginBottom: 10
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        marginBottom: 4
+      }
+    }, /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 12.5,
+        fontWeight: 600,
+        color: "#333"
+      }
+    }, tienda), /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 12,
+        color: color(pct),
+        fontWeight: 700,
+        minWidth: 80,
+        textAlign: "right"
+      }
+    }, asist, "/", total, " · ", /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 14
+      }
+    }, pct, "%"))), /*#__PURE__*/React.createElement("div", {
+      style: {
+        background: "#F0F0F0",
+        borderRadius: 20,
+        height: 12,
+        overflow: "hidden"
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        width: pct + "%",
+        height: "100%",
+        background: color(pct),
+        borderRadius: 20,
+        transition: "width .5s ease",
+        minWidth: pct > 0 ? 4 : 0
+      }
+    })))), data.length === 0 && /*#__PURE__*/React.createElement("div", {
+      style: {
+        textAlign: "center",
+        padding: 40,
+        color: "#999",
+        fontSize: 14
+      }
+    }, "Aún no hay asistencia registrada en el panel.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("small", null, "Marca ✓ en los alumnos y monitores para ver el avance."))))));
+  }
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontFamily: FAM,
+      color: INK,
+      background: BG,
+      minHeight: "100vh"
+    }
+  }, editMon && /*#__PURE__*/React.createElement(EditMonModal, {
+    mon: editMon,
+    onClose: () => setEditMon(null),
+    onSave: (f, m) => saveMonEdit(editMon, f, m)
+  }), edit && /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: G,
+      padding: "9px 28px",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "space-between",
+      flexWrap: "wrap",
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: 12.5,
+      fontWeight: 700,
+      color: N
+    }
+  }, "✏️ Modo edición · Coordinación F&D"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      gap: 8,
+      alignItems: "center"
+    }
+  }, lastSaved && /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11.5,
+      color: N,
+      opacity: .7
+    }
+  }, "✓ Guardado automáticamente"), /*#__PURE__*/React.createElement("button", {
+    onClick: downloadCSV,
+    style: {
+      background: "#fff",
+      color: N,
+      border: "none",
+      borderRadius: 8,
+      padding: "6px 14px",
+      fontSize: 12,
+      fontWeight: 700,
+      cursor: "pointer",
+      fontFamily: FAM,
+      marginRight: 6
+    }
+  }, "↓ Descargar CSV"), /*#__PURE__*/React.createElement("button", {
+    onClick: () => setEdit(false),
+    style: {
+      background: N,
+      color: "#fff",
+      border: "none",
+      borderRadius: 8,
+      padding: "7px 14px",
+      fontSize: 12,
+      fontWeight: 700,
+      cursor: "pointer",
+      fontFamily: FAM
+    }
+  }, "Salir"))), /*#__PURE__*/React.createElement("header", {
+    style: {
+      background: N,
+      color: "#fff",
+      padding: "14px 28px",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "space-between"
+    }
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", {
+    style: {
+      fontSize: 17,
+      fontWeight: 700
+    }
+  }, "Malla CP · Julio 2026")), /*#__PURE__*/React.createElement("small", {
+    style: {
+      fontSize: 11,
+      opacity: .5,
+      display: "block",
+      marginTop: 3
+    }
+  }, lastSaved ? "Última actualización: " + lastSaved + " (hora Chile)" : "")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: N,
+      padding: "12px 28px 20px",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "space-between",
+      flexWrap: "wrap",
+      gap: 10
+    }
+  }, /*#__PURE__*/React.createElement("p", {
+    style: {
+      color: "rgba(255,255,255,.6)",
+      fontSize: 12.5
+    }
+  }, "Cada ausencia debe quedar registrada. Revisa las fechas antes de solicitar reprogramación."), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      gap: 8,
+      flexWrap: "wrap"
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    onClick: () => setShowM(true),
+    style: {
+      background: "transparent",
+      color: "#fff",
+      border: "1.5px solid rgba(255,255,255,.4)",
+      borderRadius: 8,
+      padding: "9px 16px",
+      fontSize: 13,
+      fontWeight: 700,
+      cursor: "pointer",
+      fontFamily: FAM
+    }
+  }, "📅 Ver fechas para reprogramar"), /*#__PURE__*/React.createElement("button", {
+    onClick: () => setShowRanking(true),
+    style: {
+      background: "rgba(255,255,255,.12)",
+      color: "#fff",
+      border: "1.5px solid rgba(255,255,255,.35)",
+      borderRadius: 8,
+      padding: "8px 16px",
+      fontSize: 12.5,
+      fontWeight: 700,
+      cursor: "pointer",
+      fontFamily: FAM
+    }
+  }, "📊 Avance"), /*#__PURE__*/React.createElement("a", {
+    href: FORMS,
+    target: "_blank",
+    style: {
+      background: G,
+      color: N,
+      borderRadius: 8,
+      padding: "9px 16px",
+      fontSize: 13,
+      fontWeight: 700,
+      textDecoration: "none",
+      display: "inline-block"
+    }
+  }, "Registrar ausencia / reprogramación"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: "#fff",
+      borderBottom: "1px solid " + LN,
+      padding: "13px 28px",
+      display: "flex",
+      flexWrap: "wrap",
+      gap: 10,
+      alignItems: "center"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      background: BG,
+      borderRadius: 8,
+      padding: 3,
+      gap: 2
+    }
+  }, ["A", "M"].map(r => /*#__PURE__*/React.createElement("button", {
+    key: r,
+    onClick: () => {
+      setRol(r);
+      setExp({});
+      setTienda("");
+    },
+    style: {
+      border: "none",
+      background: rol === r ? N : "transparent",
+      color: rol === r ? "#fff" : SF,
+      padding: "7px 16px",
+      fontSize: 12.5,
+      fontWeight: 700,
+      borderRadius: 6,
+      cursor: "pointer",
+      fontFamily: FAM
+    }
+  }, r === "A" ? "Alumnos" : "Monitores"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      alignItems: "center",
+      gap: 6
+    }
+  }, /*#__PURE__*/React.createElement("label", {
+    style: {
+      fontSize: 10.5,
+      fontWeight: 700,
+      color: SF,
+      textTransform: "uppercase",
+      letterSpacing: ".04em"
+    }
+  }, "Fecha"), /*#__PURE__*/React.createElement("input", {
+    type: "date",
+    value: fecha,
+    onChange: e => setFecha(e.target.value),
+    style: {
+      border: "1.5px solid " + N,
+      borderRadius: 7,
+      padding: "7px 10px",
+      fontSize: 13,
+      fontFamily: FAM,
+      color: N,
+      fontWeight: 600
+    }
+  }), /*#__PURE__*/React.createElement("button", {
+    onClick: () => {
+      const t = new Date().toISOString().slice(0, 10);
+      const f = D.FI.filter(x => x >= t).sort();
+      setFecha(f.length ? f[0] : [...D.FI].sort().pop() || "");
+    },
+    style: {
+      background: N,
+      color: "#fff",
+      border: "none",
+      borderRadius: 7,
+      padding: "7px 13px",
+      fontSize: 12,
+      fontWeight: 700,
+      cursor: "pointer",
+      fontFamily: FAM
+    }
+  }, "Hoy")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      alignItems: "center",
+      gap: 6
+    }
+  }, /*#__PURE__*/React.createElement("label", {
+    style: {
+      fontSize: 10.5,
+      fontWeight: 700,
+      color: SF,
+      textTransform: "uppercase",
+      letterSpacing: ".04em"
+    }
+  }, rol === "A" ? "Tienda alumno" : "Tienda monitor"), /*#__PURE__*/React.createElement("select", {
+    value: tienda,
+    onChange: e => {
+      setTienda(e.target.value);
+    },
+    style: {
+      border: "1px solid " + LN,
+      borderRadius: 7,
+      padding: "7px 11px",
+      fontSize: 13,
+      fontFamily: FAM
+    }
+  }, /*#__PURE__*/React.createElement("option", {
+    value: ""
+  }, "Todas"), (rol === "A" ? D.T : D.TM || []).map((t, i) => /*#__PURE__*/React.createElement("option", {
+    key: i,
+    value: t
+  }, t)))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      alignItems: "center",
+      gap: 6
+    }
+  }, /*#__PURE__*/React.createElement("label", {
+    style: {
+      fontSize: 10.5,
+      fontWeight: 700,
+      color: SF,
+      textTransform: "uppercase",
+      letterSpacing: ".04em"
+    }
+  }, "Proyecto"), /*#__PURE__*/React.createElement("select", {
+    value: proy,
+    onChange: e => setProy(e.target.value),
+    style: {
+      border: "1px solid " + LN,
+      borderRadius: 7,
+      padding: "7px 11px",
+      fontSize: 13,
+      fontFamily: FAM
+    }
+  }, /*#__PURE__*/React.createElement("option", {
+    value: ""
+  }, "Todos"), [...new Set(D.R.map(r => D.C[r[2]]))].sort().map(c => /*#__PURE__*/React.createElement("option", {
+    key: c,
+    value: c
+  }, c)))), /*#__PURE__*/React.createElement("input", {
+    value: busq,
+    onChange: e => setBusq(e.target.value),
+    placeholder: "Buscar nombre…",
+    style: {
+      border: "1px solid " + LN,
+      borderRadius: 7,
+      padding: "7px 11px",
+      fontSize: 13,
+      fontFamily: FAM,
+      minWidth: 160
+    }
+  }), /*#__PURE__*/React.createElement("button", {
+    onClick: () => {
+      setFecha("");
+      setTienda("");
+      setBusq("");
+      setProy("");
+    },
+    style: {
+      background: "none",
+      border: "none",
+      color: SF,
+      fontSize: 12,
+      cursor: "pointer",
+      textDecoration: "underline",
+      marginLeft: "auto"
+    }
+  }, "Limpiar")), fecha && /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: "#FFF7E6",
+      color: "#8a6300",
+      textAlign: "center",
+      padding: "7px 24px",
+      fontSize: 13,
+      fontWeight: 600
+    }
+  }, "Mostrando ", new Date(fecha + "T12:00:00").toLocaleDateString("es-CL", {
+    weekday: "long",
+    day: "numeric",
+    month: "long"
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "16px 28px",
+      overflowX: "auto"
+    }
+  }, /*#__PURE__*/React.createElement("table", {
+    style: {
+      width: "100%",
+      borderCollapse: "collapse",
+      background: "#fff",
+      borderRadius: 10,
+      overflow: "hidden",
+      boxShadow: "0 1px 2px rgba(4,30,66,.06)"
+    }
+  }, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, rol === "A" ? ["Nombre", "Tienda alumno", "Capacitación", "Fecha", "Turno", "Monitor", "Estado", "Link"].map(h => /*#__PURE__*/React.createElement("th", {
+    key: h,
+    style: TH
+  }, h)) : [{
+    l: "",
+    w: 32
+  }, {
+    l: "Monitor"
+  }, {
+    l: "Tienda monitor"
+  }, {
+    l: "Capacitación"
+  }, {
+    l: "Fecha"
+  }, {
+    l: "Turno"
+  }, {
+    l: "Estado"
+  }, {
+    l: "Alumnos"
+  }, {
+    l: "Link"
+  }, {
+    l: ""
+  }].map((h, i) => /*#__PURE__*/React.createElement("th", {
+    key: i,
+    style: {
+      ...TH,
+      ...(h.w ? {
+        width: h.w,
+        minWidth: h.w,
+        maxWidth: h.w,
+        padding: "9px 8px"
+      } : {})
+    }
+  }, h.l)))), rol === "A" ? /*#__PURE__*/React.createElement("tbody", null, rows.length === 0 ? /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("td", {
+    colSpan: 8,
+    style: {
+      textAlign: "center",
+      padding: 40,
+      color: SF
+    }
+  }, "No hay capacitaciones para este filtro.")) : rows.map((r, i) => {
+    const eff = getEff(r);
+    const fiIdx = eff.fi >= 0 ? eff.fi : r[4];
+    const miIdx = eff.mi;
+    const e = getE(r);
+    const url = getL(r);
+    const fCh = fiIdx !== r[4];
+    const mCh = miIdx !== r[7];
+    return /*#__PURE__*/React.createElement("tr", {
+      key: i,
+      style: {
+        borderBottom: "1px solid " + LN
+      }
+    }, /*#__PURE__*/React.createElement("td", {
+      style: TD
+    }, /*#__PURE__*/React.createElement("strong", null, D.N[r[0]] || "")), /*#__PURE__*/React.createElement("td", {
+      style: TD
+    }, D.T[r[1]] || ""), /*#__PURE__*/React.createElement("td", {
+      style: TD
+    }, /*#__PURE__*/React.createElement("strong", null, D.C[r[2]] || ""), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 12,
+        color: SF
+      }
+    }, D.P[r[3]] || "")), /*#__PURE__*/React.createElement("td", {
+      style: {
+        ...TD,
+        whiteSpace: "nowrap"
+      }
+    }, fCh ? /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("span", {
+      style: {
+        textDecoration: "line-through",
+        color: SF,
+        fontSize: 11
+      }
+    }, D.FD[r[4]] || ""), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: N,
+        fontWeight: 600
+      }
+    }, "↻ ", D.FI[fiIdx] || "")) : D.FD[r[5]] || ""), /*#__PURE__*/React.createElement("td", {
+      style: {
+        ...TD,
+        whiteSpace: "nowrap"
+      }
+    }, D.AT[r[6]] || ""), /*#__PURE__*/React.createElement("td", {
+      style: TD
+    }, mCh && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("span", {
+      style: {
+        textDecoration: "line-through",
+        color: SF,
+        fontSize: 11
+      }
+    }, D.MO[r[7]] && D.MO[r[7]][0] || ""), /*#__PURE__*/React.createElement("br", null)), D.MO[miIdx] && D.MO[miIdx][0] || "", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 11,
+        color: SF
+      }
+    }, "(", (D.MO[miIdx] && D.MO[miIdx][1]) === "E" ? "Especialista" : "Monitor experto", ")")), /*#__PURE__*/React.createElement("td", {
+      style: TD
+    }, /*#__PURE__*/React.createElement(Pill, {
+      v: e,
+      onChange: edit ? val => chE(r, val, false) : null
+    }), e === "S" && r[10] > 0 && D.OL && D.OL[r[10]] && /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 10.5,
+        color: "#C2691D",
+        marginTop: 3,
+        fontStyle: "italic"
+      }
+    }, D.OL[r[10]]), e === "RP" && /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 10.5,
+        color: "#2E7D32",
+        marginTop: 3,
+        fontWeight: 600
+      }
+    }, "↻ Reprogramado", D.RFD && D.RFD[r[11]] ? " · Fecha inicial: " + D.RFD[r[11]] : "")), /*#__PURE__*/React.createElement("td", {
+      style: TD
+    }, e === "S" || e === "R" ? /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: "#C7CCD4",
+        fontSize: 12
+      }
+    }, "—") : url ? /*#__PURE__*/React.createElement("a", {
+      href: url,
+      target: "_blank",
+      style: LS
+    }, "Entrar a Teams") : /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: "#C7CCD4",
+        fontSize: 12
+      }
+    }, "—")));
+  })) : monRows.length === 0 ? /*#__PURE__*/React.createElement("tbody", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("td", {
+    colSpan: 10,
+    style: {
+      textAlign: "center",
+      padding: 40,
+      color: SF
+    }
+  }, "No hay sesiones para este filtro."))) : monRows.map((m, i) => {
+    const k = m.mi + "|" + m.fi + "|" + m.ci;
+    const open = !!exp[k];
+    const rep = m.alums[0];
+    const _sk = "s:" + m.mi + "|" + m.fi + "|" + m.ci;
+    const e = ov[_sk] !== undefined ? ov[_sk] : m.is_s ? "S" : "C";
+    // Link: chequear override en mo primero
+    const _moLk = mo[m.mi + "|" + m.fi + "|" + m.ci];
+    const url = _moLk && _moLk.lk || D.L[m.li] || "";
+    const fCh = m.fi !== m.origFi;
+    const mCh = m.mi !== m.origMi;
+    return /*#__PURE__*/React.createElement("tbody", {
+      key: k
+    }, /*#__PURE__*/React.createElement("tr", {
+      style: {
+        cursor: "pointer",
+        background: "#FAFBFC"
+      },
+      onClick: () => setExp({
+        ...exp,
+        [k]: !open
+      })
+    }, /*#__PURE__*/React.createElement("td", {
+      style: {
+        ...TD,
+        width: 32,
+        minWidth: 32,
+        maxWidth: 32,
+        padding: "10px 8px",
+        textAlign: "center"
+      }
+    }, /*#__PURE__*/React.createElement("span", {
+      style: {
+        display: "inline-block",
+        transition: "transform .15s",
+        transform: open ? "rotate(90deg)" : "none",
+        fontSize: 10,
+        color: SF
+      }
+    }, "▶")), /*#__PURE__*/React.createElement("td", {
+      style: {
+        ...TD,
+        fontWeight: 600
+      }
+    }, mCh && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("span", {
+      style: {
+        textDecoration: "line-through",
+        color: SF,
+        fontSize: 11,
+        fontWeight: 400
+      }
+    }, D.MO[m.origMi] && D.MO[m.origMi][0] || ""), /*#__PURE__*/React.createElement("br", null)), D.MO[m.mi] && D.MO[m.mi][0] || "", /*#__PURE__*/React.createElement("span", {
+      style: {
+        marginLeft: 6,
+        background: (D.MO[m.mi] && D.MO[m.mi][1]) === "E" ? "#EFF6FF" : "#F3F5F8",
+        color: (D.MO[m.mi] && D.MO[m.mi][1]) === "E" ? "#1a56db" : SF,
+        fontSize: 10,
+        fontWeight: 700,
+        padding: "1px 7px",
+        borderRadius: 10,
+        whiteSpace: "nowrap"
+      }
+    }, (D.MO[m.mi] && D.MO[m.mi][1]) === "E" ? "Especialista" : "Monitor")), /*#__PURE__*/React.createElement("td", {
+      style: {
+        ...TD,
+        fontSize: 12,
+        color: SF
+      }
+    }, D.MO[m.mi] && D.MO[m.mi][2] || "—"), /*#__PURE__*/React.createElement("td", {
+      style: TD
+    }, /*#__PURE__*/React.createElement("strong", null, D.C[m.ci] || ""), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 12,
+        color: SF
+      }
+    }, D.P[m.pi] || "")), /*#__PURE__*/React.createElement("td", {
+      style: {
+        ...TD,
+        whiteSpace: "nowrap"
+      }
+    }, fCh ? /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("span", {
+      style: {
+        textDecoration: "line-through",
+        color: SF,
+        fontSize: 11
+      }
+    }, D.FD[m.origFi] || ""), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: N,
+        fontWeight: 600
+      }
+    }, "↻ ", D.FI[m.fi] || "")) : D.FD[m.fi] || ""), /*#__PURE__*/React.createElement("td", {
+      style: {
+        ...TD,
+        whiteSpace: "nowrap"
+      }
+    }, D.MT[m.mon_t] || ""), /*#__PURE__*/React.createElement("td", {
+      style: TD,
+      onClick: ev => ev.stopPropagation()
+    }, /*#__PURE__*/React.createElement(Pill, {
+      v: e,
+      onChange: edit ? val => {
+        const sk = "s:" + m.mi + "|" + m.fi + "|" + m.ci;
+        const nv = {
+          ...ov,
+          [sk]: val
+        };
+        // Cascada a alumnos si es A o S
+        if (val === "A" || val === "S" || val === "C") {
+          m.alums.forEach(a => {
+            if (!ov[rk(a)] || ov[rk(a)] === "C" || ov[rk(a)] === "P") nv[rk(a)] = val;
+          });
+        }
+        (async () => {
+          const hora = chileNow();
+          setOv(nv);
+          setLastSaved(hora);
+          try {
+            for (const [cl, vl] of Object.entries(nv)) await sbUpsert('estados', {
+              clave: cl,
+              valor: vl
+            });
+            await sbUpsert('metadata', {
+              id: 1,
+              hora_guardado: hora
+            });
+          } catch (e) {}
+        })();
+      } : null
+    }), edit && /*#__PURE__*/React.createElement("button", {
+      onClick: ev => {
+        ev.stopPropagation();
+        toggleMonAst(m);
+      },
+      style: {
+        background: ast[m.mi + "|" + m.fi + "|" + m.ci] === "A" ? "#1B5E20" : ast[m.mi + "|" + m.fi + "|" + m.ci] === "N" ? "#B71C1C" : "#E8ECF0",
+        color: ast[m.mi + "|" + m.fi + "|" + m.ci] ? "#fff" : "#999",
+        border: "none",
+        borderRadius: 20,
+        width: 28,
+        height: 28,
+        fontSize: 14,
+        cursor: "pointer",
+        fontWeight: 700,
+        marginLeft: 4,
+        display: "inline-flex",
+        alignItems: "center",
+        justifyContent: "center"
+      }
+    }, ast[m.mi + "|" + m.fi + "|" + m.ci] === "A" ? "✓" : ast[m.mi + "|" + m.fi + "|" + m.ci] === "N" ? "✗" : "·"), e === "S" && m.mon_t >= 0 && D.OL && D.S.find(s => s[4] === m.mi && s[2] === m.fi && s[0] === m.ci) && D.OL[D.S.find(s => s[4] === m.mi && s[2] === m.fi && s[0] === m.ci)[8]] && /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 10.5,
+        color: "#C2691D",
+        marginTop: 3,
+        fontStyle: "italic"
+      }
+    }, D.OL[D.S.find(s => s[4] === m.mi && s[2] === m.fi && s[0] === m.ci)[8]])), /*#__PURE__*/React.createElement("td", {
+      style: TD
+    }, /*#__PURE__*/React.createElement("span", {
+      style: {
+        background: "#E8EBEF",
+        color: SF,
+        fontSize: 11,
+        fontWeight: 700,
+        padding: "2px 9px",
+        borderRadius: 20
+      }
+    }, m.alums.length, " alumnos")), /*#__PURE__*/React.createElement("td", {
+      style: TD,
+      onClick: ev => ev.stopPropagation()
+    }, url ? /*#__PURE__*/React.createElement("a", {
+      href: url,
+      target: "_blank",
+      style: LS
+    }, "Entrar") : /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: "#C7CCD4",
+        fontSize: 12
+      }
+    }, "—")), /*#__PURE__*/React.createElement("td", {
+      style: TD,
+      onClick: ev => ev.stopPropagation()
+    }, edit && /*#__PURE__*/React.createElement("button", {
+      onClick: () => setEditMon(m),
+      style: {
+        background: G,
+        color: N,
+        border: "none",
+        borderRadius: 6,
+        padding: "4px 10px",
+        fontSize: 11,
+        fontWeight: 700,
+        cursor: "pointer",
+        fontFamily: FAM,
+        whiteSpace: "nowrap"
+      }
+    }, "✏️ Editar"))), /*#__PURE__*/React.createElement("tr", {
+      style: {
+        display: open ? "table-row" : "none"
+      }
+    }, /*#__PURE__*/React.createElement("td", {
+      colSpan: 10,
+      style: {
+        padding: 0,
+        background: "#FBFBFC",
+        borderBottom: "1px solid " + LN
+      }
+    }, /*#__PURE__*/React.createElement("table", {
+      style: {
+        width: "100%",
+        borderCollapse: "collapse"
+      }
+    }, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", {
+      style: {
+        background: "#F0F2F5"
+      }
+    }, ["Nombre", "Tienda", "Estado", "Link"].map(h => /*#__PURE__*/React.createElement("td", {
+      key: h,
+      style: {
+        padding: "6px 12px 6px 38px",
+        fontSize: 10.5,
+        fontWeight: 700,
+        color: SF,
+        textTransform: "uppercase",
+        letterSpacing: ".04em"
+      }
+    }, h)))), /*#__PURE__*/React.createElement("tbody", null, m.alums.map((a, ai) => {
+      const ae = getE(a);
+      const au = getL(a);
+      return /*#__PURE__*/React.createElement("tr", {
+        key: ai,
+        style: {
+          borderBottom: "1px solid #EFF1F4"
+        }
+      }, /*#__PURE__*/React.createElement("td", {
+        style: {
+          padding: "7px 12px 7px 38px",
+          fontSize: 12.5
+        }
+      }, D.N[a[0]] || ""), /*#__PURE__*/React.createElement("td", {
+        style: {
+          padding: "7px 12px",
+          fontSize: 12.5,
+          color: SF
+        }
+      }, D.T[a[1]] || ""), /*#__PURE__*/React.createElement("td", {
+        style: {
+          padding: "7px 12px"
+        }
+      }, /*#__PURE__*/React.createElement(Pill, {
+        v: ae,
+        onChange: edit ? val => chE(a, val, false) : null
+      }), ae === "S" && a[10] > 0 && D.OL && D.OL[a[10]] && /*#__PURE__*/React.createElement("div", {
+        style: {
+          fontSize: 10,
+          color: "#C2691D",
+          marginTop: 2,
+          fontStyle: "italic"
+        }
+      }, D.OL[a[10]]), ae === "RP" && /*#__PURE__*/React.createElement("div", {
+        style: {
+          fontSize: 10,
+          color: "#2E7D32",
+          marginTop: 2,
+          fontWeight: 600
+        }
+      }, "↻ Reprogramado", D.RFD && D.RFD[a[11]] ? " · Fecha inicial: " + D.RFD[a[11]] : "")), edit && /*#__PURE__*/React.createElement("td", {
+        style: {
+          padding: "4px 6px",
+          textAlign: "center"
+        }
+      }, /*#__PURE__*/React.createElement("button", {
+        onClick: ev => {
+          ev.stopPropagation();
+          toggleAst(a);
+        },
+        title: ast[rk(a)] === "A" ? "Asistió" : ast[rk(a)] === "N" ? "No asistió" : "Sin registrar",
+        style: {
+          background: ast[rk(a)] === "A" ? "#1B5E20" : ast[rk(a)] === "N" ? "#B71C1C" : "#E8ECF0",
+          color: ast[rk(a)] ? "#fff" : "#aaa",
+          border: "none",
+          borderRadius: 20,
+          width: 26,
+          height: 26,
+          fontSize: 12,
+          cursor: "pointer",
+          fontWeight: 700,
+          display: "inline-flex",
+          alignItems: "center",
+          justifyContent: "center"
+        }
+      }, ast[rk(a)] === "A" ? "✓" : ast[rk(a)] === "N" ? "✗" : "·")), /*#__PURE__*/React.createElement("td", {
+        style: {
+          padding: "7px 12px"
+        }
+      }, ae === "S" || ae === "R" ? /*#__PURE__*/React.createElement("span", {
+        style: {
+          color: "#C7CCD4",
+          fontSize: 12
+        }
+      }, "—") : au ? /*#__PURE__*/React.createElement("a", {
+        href: au,
+        target: "_blank",
+        style: {
+          ...LS,
+          padding: "3px 8px",
+          fontSize: 10.5
+        }
+      }, "Entrar") : /*#__PURE__*/React.createElement("span", {
+        style: {
+          color: "#C7CCD4",
+          fontSize: 12
+        }
+      }, "—")));
+    }))))));
+  }))), showM && /*#__PURE__*/React.createElement("div", {
+    onClick: e => {
+      if (e.target === e.currentTarget) setShowM(false);
+    },
+    style: {
+      position: "fixed",
+      inset: 0,
+      background: "rgba(4,30,66,.55)",
+      zIndex: 100,
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      padding: 16
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: "#fff",
+      borderRadius: 14,
+      width: "100%",
+      maxWidth: 680,
+      maxHeight: "88vh",
+      display: "flex",
+      flexDirection: "column",
+      boxShadow: "0 24px 60px rgba(0,0,0,.3)"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: N,
+      color: "#fff",
+      padding: "16px 20px",
+      borderRadius: "14px 14px 0 0",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "space-between"
+    }
+  }, /*#__PURE__*/React.createElement("h2", {
+    style: {
+      fontSize: 15,
+      fontWeight: 700
+    }
+  }, "📅 Fechas para reprogramar"), /*#__PURE__*/React.createElement("button", {
+    onClick: () => setShowM(false),
+    style: {
+      background: "rgba(255,255,255,.12)",
+      color: "#fff",
+      border: "none",
+      borderRadius: 7,
+      padding: "5px 11px",
+      fontSize: 18,
+      cursor: "pointer",
+      lineHeight: 1
+    }
+  }, "×")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "14px 20px",
+      borderBottom: "1px solid " + LN
+    }
+  }, /*#__PURE__*/React.createElement("input", {
+    value: mq,
+    onChange: e => setMq(e.target.value),
+    placeholder: "Busca por nombre o código de capacitación…",
+    style: {
+      width: "100%",
+      border: "1px solid " + LN,
+      borderRadius: 8,
+      padding: "9px 13px",
+      fontSize: 13,
+      fontFamily: FAM,
+      boxSizing: "border-box"
+    }
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      overflowY: "auto",
+      padding: "6px 20px 20px"
+    }
+  }, !mq && /*#__PURE__*/React.createElement("p", {
+    style: {
+      textAlign: "center",
+      padding: 32,
+      color: SF,
+      fontSize: 13
+    }
+  }, "Escribe el nombre de la capacitación."), mq && !sesFil.length && /*#__PURE__*/React.createElement("p", {
+    style: {
+      textAlign: "center",
+      padding: 32,
+      color: SF,
+      fontSize: 13
+    }
+  }, "No se encontró ninguna capacitación."), Object.values(sesByP).map((p, pi) => /*#__PURE__*/React.createElement("div", {
+    key: pi
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      fontWeight: 700,
+      color: SF,
+      textTransform: "uppercase",
+      letterSpacing: ".04em",
+      marginTop: 14,
+      paddingTop: pi > 0 ? 8 : 0,
+      borderTop: pi > 0 ? "1px solid " + LN : "none",
+      marginBottom: 7
+    }
+  }, p.cod, " · ", p.nom), [...p.ss].sort((a, b) => (D.FI[a[2]] || "").localeCompare(D.FI[b[2]] || "")).map((s, si) => {
+    const dStr = D.FI[s[2]] || "";
+    const d = dStr ? new Date(dStr + "T12:00:00") : null;
+    return /*#__PURE__*/React.createElement("div", {
+      key: si,
+      style: {
+        background: BG,
+        borderRadius: 9,
+        padding: "10px 13px",
+        marginBottom: 6,
+        display: "flex",
+        alignItems: "center",
+        gap: 12
+      }
+    }, d && /*#__PURE__*/React.createElement("div", {
+      style: {
+        textAlign: "center",
+        minWidth: 42
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 18,
+        fontWeight: 800,
+        color: N,
+        lineHeight: 1
+      }
+    }, d.getDate()), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 10,
+        color: SF,
+        textTransform: "uppercase",
+        fontWeight: 600
+      }
+    }, MESES[d.getMonth()])), /*#__PURE__*/React.createElement("div", {
+      style: {
+        flex: 1,
+        fontSize: 12.5,
+        color: SF
+      }
+    }, D.MO[s[4]] && D.MO[s[4]][0] || "", " ", /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: "#9AA3B0"
+      }
+    }, "(", (D.MO[s[4]] && D.MO[s[4]][1]) === "E" ? "Especialista" : "Monitor experto", ")"), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 11.5
+      }
+    }, s[5], " inscritos", s[6] ? " · Suspendida" : "")));
+  })))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "13px 20px",
+      borderTop: "1px solid " + LN,
+      display: "flex",
+      justifyContent: "flex-end"
+    }
+  }, /*#__PURE__*/React.createElement("a", {
+    href: FORMS,
+    target: "_blank",
+    style: {
+      background: G,
+      color: N,
+      borderRadius: 8,
+      padding: "9px 16px",
+      fontSize: 13,
+      fontWeight: 700,
+      textDecoration: "none",
+      display: "inline-block"
+    }
+  }, "Ir al formulario")))), showRanking && /*#__PURE__*/React.createElement(RankingModal, null));
+}
+
+try{const root=ReactDOM.createRoot(document.getElementById('root'));root.render(React.createElement(App));}
+catch(err){document.getElementById('root').innerHTML='<pre style="color:red;padding:20px">'+err.stack+'</pre>';}
+</script>
+</body>
+</html>
